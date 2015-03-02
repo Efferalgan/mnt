@@ -1,0 +1,10 @@
+digraph "/home/gtsi/ProjetGPX" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6c86eb38bd3f2709089bb3e6764c5a8e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6c86eb38bd3f2709089bb3e6764c5a8e.html"];
+    dir_6c86eb38bd3f2709089bb3e6764c5a8e [shape=plaintext label="ProjetGPX"];
+    dir_06d1fd6bfc89511f701b9c6657232bc6 [shape=box label="last_version" color="black" fillcolor="white" style="filled" URL="dir_06d1fd6bfc89511f701b9c6657232bc6.html"];
+  }
+}

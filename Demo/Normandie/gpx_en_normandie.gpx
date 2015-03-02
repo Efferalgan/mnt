@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Hume la Normandie</name>
+    <desc />
+    <copyright author="">
+      <year>2010</year>
+    </copyright>
+    <bounds minlat="49.28405779" minlon="-0.12013172" maxlat="49.28517754" maxlon="-0.11823018" />
+  </metadata>
+  <trk>
+    <name>Hume la Normandie</name>
+    <trkseg>
+      <trkpt lat="49.2851" lon="-0.1201">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="49.2848" lon="-0.1182">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="49.2842" lon="-0.1192">
+        <ele>5.45415163040161</ele>
+      </trkpt>
+      <trkpt lat="49.2842" lon="-0.1182">
+        <ele>4.53474760055542</ele>
+      </trkpt>
+      <trkpt lat="49.2840" lon="-0.1198">
+        <ele>5.41645669937134</ele>
+      </trkpt>
+      <trkpt lat="49.2846" lon="-0.1192">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="49.2842" lon="-0.1198">
+        <ele>5.21303510665894</ele>
+      </trkpt>
+      <trkpt lat="49.2851" lon="-0.1201">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="49.2841" lon="-0.1200">
+        <ele>5.10656452178955</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

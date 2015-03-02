@@ -1,0 +1,366 @@
+\hypertarget{main__opengl_8cpp}{\section{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/main\+\_\+opengl.cpp File Reference}
+\label{main__opengl_8cpp}\index{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/main\+\_\+opengl.\+cpp@{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/main\+\_\+opengl.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}main\+\_\+opengl.\+h\char`\"{}}\\*
+Include dependency graph for main\+\_\+opengl.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main__opengl_8cpp_a9bf84db0d851889303485acad5cbc413}{Initialise} (char $\ast$)
+\item 
+void \hyperlink{main__opengl_8cpp_a318a0cdbdb9837896d4fa433809b623c}{Define\+Window} (char $\ast$)
+\item 
+void \hyperlink{main__opengl_8cpp_a94fe4412f1302f5ff3027e2f9e43379c}{resize} (int, int)
+\item 
+void \hyperlink{main__opengl_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}{display} (void)
+\item 
+void \hyperlink{main__opengl_8cpp_a01131b63acf241e9db91704d89ce15d2}{idle} (void)
+\item 
+void \hyperlink{main__opengl_8cpp_a00caca93fd223272b98ec5de959e829e}{key} (unsigned char, int, int)
+\item 
+void \hyperlink{main__opengl_8cpp_a96262abdb4dc55fa6df8f8b40eb5f1e7}{ptdevue} (int)
+\item 
+void \hyperlink{main__opengl_8cpp_ac0ea79715a593c33ba322ee887884edd}{Special\+Keys} (int, int, int)
+\item 
+void \hyperlink{main__opengl_8cpp_ad5f65dabb3c429ec69355a43b711b06b}{Define\+Window} (char $\ast$Titre, int width, int height)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main__opengl_8cpp_a6849234e588cf9aab8ac36f62c6168c5}{idptdevue}
+\item 
+int \hyperlink{main__opengl_8cpp_af056ce6641128930a6dc802994432a81}{firstboucle} = 1
+\item 
+float \hyperlink{main__opengl_8cpp_afea36502e9d227ff62c5fb2719a246f2}{t} =0
+\item 
+float \hyperlink{main__opengl_8cpp_ab003a1a52083f94ec0e39bb78b8295b0}{t1} =0
+\item 
+float \hyperlink{main__opengl_8cpp_a6d90832db0d668e1ad21ea05454f5b13}{dif\+T} =0
+\item 
+int \hyperlink{main__opengl_8cpp_afd62e5731afb916847cef0652c0fbc83}{ids} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a81ceb4deb3327b606fc3a1c09aa43576}{vit} = 1000
+\item 
+double \hyperlink{main__opengl_8cpp_ad8aea8b687210b3742026bd1a55f4fe3}{vtab} \mbox{[}11\mbox{]}
+\item 
+int \hyperlink{main__opengl_8cpp_aa1ca48c57c7bf3e7e44d5c5c6b7b917d}{idv} = 5
+\item 
+double \hyperlink{main__opengl_8cpp_a5559d17f092df97e1797a76209e0caa0}{d\+X} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_a5b69e4344b7089d8a3c6db32a3c38551}{d\+Y} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_a5e884e7b522a167c960f05eee1bae527}{d\+Z} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_a607e0d093ea54a64461d07cae05dc2ba}{D\+X} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_a34b8683911a6f17b41430c2632e871f9}{D\+Y} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_a8a1c4ba60ffcc06c6266512246617c6c}{D\+Z} = 0
+\item 
+float \hyperlink{main__opengl_8cpp_a2578b368dad74bcd4a88bbeeb319a833}{dist} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_ada9a1b5c1199ff81781955e87182a479}{coef} \mbox{[}11\mbox{]}
+\item 
+int \hyperlink{main__opengl_8cpp_a73b6969f44c22c858db985954416b33e}{typedist} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a48ada3380f6005c26b711b9a701bd20a}{intermed} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a3ba029dd6d85988ff9d605890b6ac8f8}{atest} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a59657169fbae91a2b49e70def42768d7}{triangles} =0
+\item 
+double \hyperlink{main__opengl_8cpp_ae91f5e2326c676bc2ab4e823b6ce4227}{altmax} = 0.
+\item 
+double \hyperlink{main__opengl_8cpp_a8f37c345f5ef95100eba50c32e633706}{altmin} = 100000.
+\item 
+int \hyperlink{main__opengl_8cpp_a9efcf9efc78327c91a85e87f72bcabe3}{taille\+Mnt} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a3a7f1a486821291141a1c77aca9a0ec9}{taille\+Isos} = 0
+\item 
+double \hyperlink{main__opengl_8cpp_ae84a0027e9d218387b4f7b2e5b22b7cf}{colortriangle} \mbox{[}10000000\mbox{]}
+\item 
+double \hyperlink{main__opengl_8cpp_a6360d1f3529ea575f09476f76fd2b09d}{colorline} \mbox{[}10000000\mbox{]}
+\item 
+int \hyperlink{main__opengl_8cpp_a3f724bce56487f1b6d3f0250a6f8ef3b}{aveccolor} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a85a55639db94c0846cd6c16fb32f3fd8}{aveciso} = 0
+\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{main__opengl_8cpp_ad0d38886963f535e6f051ac2c2ff16d5}{vect}
+\item 
+vector$<$ vector$<$ vector$<$ vector\\*
+$<$ double $>$ $>$ $>$ $>$ \hyperlink{main__opengl_8cpp_ab88cd10442ab875379a07144bdc30392}{vectisohypse}
+\item 
+vector$<$ double $>$ \hyperlink{main__opengl_8cpp_a9be9c4e142966019740c3703f3393b1b}{tmp}
+\item 
+int \hyperlink{main__opengl_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a148e3876077787926724625411d6e7a9}{b} = 0
+\item 
+int \hyperlink{main__opengl_8cpp_a4e1e0e72dd773439e333c84dd762a9c3}{c} = 5
+\item 
+int \hyperlink{main__opengl_8cpp_a71237b18c216e02629593b1969cff245}{teste} = 0
+\item 
+double $\ast$$\ast$ \hyperlink{main__opengl_8cpp_a95940fa0c2498b0cf8ee4c55d75dda0e}{tab}
+\item 
+static float \hyperlink{main__opengl_8cpp_a9f65c513aaad1b6275432a65f0c0e1e1}{Rot\+X} = 0
+\item 
+static float \hyperlink{main__opengl_8cpp_aad5866cabaef516d85cd4913f27e70f9}{Rot\+Y} = 0
+\item 
+static float \hyperlink{main__opengl_8cpp_ad5803ef493f1235b956ae014d53e6092}{Rot\+Z} = 0
+\item 
+float \hyperlink{main__opengl_8cpp_a9ddb15063606d71e97bb4a7a642e2763}{Tran\+X} = 0
+\item 
+float \hyperlink{main__opengl_8cpp_a52d144c40af2b0a109b4039ee6c3f2a8}{Tran\+Y} = 0
+\item 
+float \hyperlink{main__opengl_8cpp_ace889943cb0e8bd50387275c6b27862d}{Tran\+Z} = 0
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_a35b44e70b5291d4c6a2ddfa0ffe062e8}{light\+\_\+ambient} \mbox{[}$\,$\mbox{]} = \{ 0.\+5f, 0.\+5f, 0.\+5f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_ad0bc3e49164c7d5d01dd6b4a0d0fff25}{light\+\_\+diffuse} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_a48537988fd7a403709b0a7ffcbebac77}{light\+\_\+specular} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_aea3c4afba5fcc8b77067671d396b577b}{light\+\_\+position} \mbox{[}$\,$\mbox{]} = \{ 2.\+0f, 5.\+0f, 5.\+0f, 0.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_adfbd08e06a4a9fc898f6a3b9797316d8}{mat\+\_\+ambient} \mbox{[}$\,$\mbox{]} = \{ 0.\+7f, 0.\+7f, 0.\+7f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_aabea2510d410c6e2c8470a262cdabada}{mat\+\_\+diffuse} \mbox{[}$\,$\mbox{]} = \{ 0.\+8f, 0.\+8f, 0.\+8f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_aa024b50a93b02ad54fc180d4729d8735}{mat\+\_\+specular} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\item 
+const G\+Lfloat \hyperlink{main__opengl_8cpp_a93c2ee41abd3c06ade37dd87e48a8a33}{high\+\_\+shininess} \mbox{[}$\,$\mbox{]} = \{ 100.\+0f \}
+\item 
+int \hyperlink{main__opengl_8cpp_af7a035f1a720fb7a4a279410f376800b}{n\+Full\+Screen} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main__opengl_8cpp_a318a0cdbdb9837896d4fa433809b623c}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Define\+Window@{Define\+Window}}
+\index{Define\+Window@{Define\+Window}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Define\+Window}]{\setlength{\rightskip}{0pt plus 5cm}void Define\+Window (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a318a0cdbdb9837896d4fa433809b623c}
+\hypertarget{main__opengl_8cpp_ad5f65dabb3c429ec69355a43b711b06b}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Define\+Window@{Define\+Window}}
+\index{Define\+Window@{Define\+Window}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Define\+Window}]{\setlength{\rightskip}{0pt plus 5cm}void Define\+Window (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Titre, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_ad5f65dabb3c429ec69355a43b711b06b}
+\hypertarget{main__opengl_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!display@{display}}
+\index{display@{display}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}
+\hypertarget{main__opengl_8cpp_a01131b63acf241e9db91704d89ce15d2}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!idle@{idle}}
+\index{idle@{idle}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{idle}]{\setlength{\rightskip}{0pt plus 5cm}void idle (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a01131b63acf241e9db91704d89ce15d2}
+\hypertarget{main__opengl_8cpp_a9bf84db0d851889303485acad5cbc413}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Initialise}]{\setlength{\rightskip}{0pt plus 5cm}void Initialise (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Titre}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a9bf84db0d851889303485acad5cbc413}
+\hypertarget{main__opengl_8cpp_a00caca93fd223272b98ec5de959e829e}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!key@{key}}
+\index{key@{key}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}void key (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a00caca93fd223272b98ec5de959e829e}
+\hypertarget{main__opengl_8cpp_a96262abdb4dc55fa6df8f8b40eb5f1e7}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!ptdevue@{ptdevue}}
+\index{ptdevue@{ptdevue}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{ptdevue}]{\setlength{\rightskip}{0pt plus 5cm}void ptdevue (
+\begin{DoxyParamCaption}
+\item[{int}]{idptdevue}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a96262abdb4dc55fa6df8f8b40eb5f1e7}
+\hypertarget{main__opengl_8cpp_a94fe4412f1302f5ff3027e2f9e43379c}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!resize@{resize}}
+\index{resize@{resize}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void resize (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_a94fe4412f1302f5ff3027e2f9e43379c}
+\hypertarget{main__opengl_8cpp_ac0ea79715a593c33ba322ee887884edd}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Special\+Keys@{Special\+Keys}}
+\index{Special\+Keys@{Special\+Keys}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Special\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}void Special\+Keys (
+\begin{DoxyParamCaption}
+\item[{int}]{key1, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{main__opengl_8cpp_ac0ea79715a593c33ba322ee887884edd}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main__opengl_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!a@{a}}
+\index{a@{a}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}int a = 0}}\label{main__opengl_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}
+\hypertarget{main__opengl_8cpp_ae91f5e2326c676bc2ab4e823b6ce4227}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!altmax@{altmax}}
+\index{altmax@{altmax}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{altmax}]{\setlength{\rightskip}{0pt plus 5cm}double altmax = 0.}}\label{main__opengl_8cpp_ae91f5e2326c676bc2ab4e823b6ce4227}
+\hypertarget{main__opengl_8cpp_a8f37c345f5ef95100eba50c32e633706}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!altmin@{altmin}}
+\index{altmin@{altmin}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{altmin}]{\setlength{\rightskip}{0pt plus 5cm}double altmin = 100000.}}\label{main__opengl_8cpp_a8f37c345f5ef95100eba50c32e633706}
+\hypertarget{main__opengl_8cpp_a3ba029dd6d85988ff9d605890b6ac8f8}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!atest@{atest}}
+\index{atest@{atest}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{atest}]{\setlength{\rightskip}{0pt plus 5cm}int atest = 0}}\label{main__opengl_8cpp_a3ba029dd6d85988ff9d605890b6ac8f8}
+\hypertarget{main__opengl_8cpp_a3f724bce56487f1b6d3f0250a6f8ef3b}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!aveccolor@{aveccolor}}
+\index{aveccolor@{aveccolor}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{aveccolor}]{\setlength{\rightskip}{0pt plus 5cm}int aveccolor = 0}}\label{main__opengl_8cpp_a3f724bce56487f1b6d3f0250a6f8ef3b}
+\hypertarget{main__opengl_8cpp_a85a55639db94c0846cd6c16fb32f3fd8}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!aveciso@{aveciso}}
+\index{aveciso@{aveciso}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{aveciso}]{\setlength{\rightskip}{0pt plus 5cm}int aveciso = 0}}\label{main__opengl_8cpp_a85a55639db94c0846cd6c16fb32f3fd8}
+\hypertarget{main__opengl_8cpp_a148e3876077787926724625411d6e7a9}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!b@{b}}
+\index{b@{b}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}int b = 0}}\label{main__opengl_8cpp_a148e3876077787926724625411d6e7a9}
+\hypertarget{main__opengl_8cpp_a4e1e0e72dd773439e333c84dd762a9c3}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!c@{c}}
+\index{c@{c}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{c}]{\setlength{\rightskip}{0pt plus 5cm}int c = 5}}\label{main__opengl_8cpp_a4e1e0e72dd773439e333c84dd762a9c3}
+\hypertarget{main__opengl_8cpp_ada9a1b5c1199ff81781955e87182a479}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!coef@{coef}}
+\index{coef@{coef}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{coef}]{\setlength{\rightskip}{0pt plus 5cm}double coef\mbox{[}11\mbox{]}}}\label{main__opengl_8cpp_ada9a1b5c1199ff81781955e87182a479}
+\hypertarget{main__opengl_8cpp_a6360d1f3529ea575f09476f76fd2b09d}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!colorline@{colorline}}
+\index{colorline@{colorline}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{colorline}]{\setlength{\rightskip}{0pt plus 5cm}double colorline\mbox{[}10000000\mbox{]}}}\label{main__opengl_8cpp_a6360d1f3529ea575f09476f76fd2b09d}
+\hypertarget{main__opengl_8cpp_ae84a0027e9d218387b4f7b2e5b22b7cf}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!colortriangle@{colortriangle}}
+\index{colortriangle@{colortriangle}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{colortriangle}]{\setlength{\rightskip}{0pt plus 5cm}double colortriangle\mbox{[}10000000\mbox{]}}}\label{main__opengl_8cpp_ae84a0027e9d218387b4f7b2e5b22b7cf}
+\hypertarget{main__opengl_8cpp_a6d90832db0d668e1ad21ea05454f5b13}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!dif\+T@{dif\+T}}
+\index{dif\+T@{dif\+T}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{dif\+T}]{\setlength{\rightskip}{0pt plus 5cm}float dif\+T =0}}\label{main__opengl_8cpp_a6d90832db0d668e1ad21ea05454f5b13}
+\hypertarget{main__opengl_8cpp_a2578b368dad74bcd4a88bbeeb319a833}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!dist@{dist}}
+\index{dist@{dist}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{dist}]{\setlength{\rightskip}{0pt plus 5cm}float dist = 0}}\label{main__opengl_8cpp_a2578b368dad74bcd4a88bbeeb319a833}
+\hypertarget{main__opengl_8cpp_a5559d17f092df97e1797a76209e0caa0}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!d\+X@{d\+X}}
+\index{d\+X@{d\+X}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{d\+X}]{\setlength{\rightskip}{0pt plus 5cm}double d\+X = 0}}\label{main__opengl_8cpp_a5559d17f092df97e1797a76209e0caa0}
+\hypertarget{main__opengl_8cpp_a607e0d093ea54a64461d07cae05dc2ba}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!D\+X@{D\+X}}
+\index{D\+X@{D\+X}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{D\+X}]{\setlength{\rightskip}{0pt plus 5cm}double D\+X = 0}}\label{main__opengl_8cpp_a607e0d093ea54a64461d07cae05dc2ba}
+\hypertarget{main__opengl_8cpp_a5b69e4344b7089d8a3c6db32a3c38551}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!d\+Y@{d\+Y}}
+\index{d\+Y@{d\+Y}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{d\+Y}]{\setlength{\rightskip}{0pt plus 5cm}double d\+Y = 0}}\label{main__opengl_8cpp_a5b69e4344b7089d8a3c6db32a3c38551}
+\hypertarget{main__opengl_8cpp_a34b8683911a6f17b41430c2632e871f9}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!D\+Y@{D\+Y}}
+\index{D\+Y@{D\+Y}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{D\+Y}]{\setlength{\rightskip}{0pt plus 5cm}double D\+Y = 0}}\label{main__opengl_8cpp_a34b8683911a6f17b41430c2632e871f9}
+\hypertarget{main__opengl_8cpp_a5e884e7b522a167c960f05eee1bae527}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!d\+Z@{d\+Z}}
+\index{d\+Z@{d\+Z}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{d\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double d\+Z = 0}}\label{main__opengl_8cpp_a5e884e7b522a167c960f05eee1bae527}
+\hypertarget{main__opengl_8cpp_a8a1c4ba60ffcc06c6266512246617c6c}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!D\+Z@{D\+Z}}
+\index{D\+Z@{D\+Z}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{D\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double D\+Z = 0}}\label{main__opengl_8cpp_a8a1c4ba60ffcc06c6266512246617c6c}
+\hypertarget{main__opengl_8cpp_af056ce6641128930a6dc802994432a81}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!firstboucle@{firstboucle}}
+\index{firstboucle@{firstboucle}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{firstboucle}]{\setlength{\rightskip}{0pt plus 5cm}int firstboucle = 1}}\label{main__opengl_8cpp_af056ce6641128930a6dc802994432a81}
+\hypertarget{main__opengl_8cpp_a93c2ee41abd3c06ade37dd87e48a8a33}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!high\+\_\+shininess@{high\+\_\+shininess}}
+\index{high\+\_\+shininess@{high\+\_\+shininess}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{high\+\_\+shininess}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat high\+\_\+shininess\mbox{[}$\,$\mbox{]} = \{ 100.\+0f \}}}\label{main__opengl_8cpp_a93c2ee41abd3c06ade37dd87e48a8a33}
+\hypertarget{main__opengl_8cpp_a6849234e588cf9aab8ac36f62c6168c5}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!idptdevue@{idptdevue}}
+\index{idptdevue@{idptdevue}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{idptdevue}]{\setlength{\rightskip}{0pt plus 5cm}int idptdevue}}\label{main__opengl_8cpp_a6849234e588cf9aab8ac36f62c6168c5}
+\hypertarget{main__opengl_8cpp_afd62e5731afb916847cef0652c0fbc83}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!ids@{ids}}
+\index{ids@{ids}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}int ids = 0}}\label{main__opengl_8cpp_afd62e5731afb916847cef0652c0fbc83}
+\hypertarget{main__opengl_8cpp_aa1ca48c57c7bf3e7e44d5c5c6b7b917d}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!idv@{idv}}
+\index{idv@{idv}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{idv}]{\setlength{\rightskip}{0pt plus 5cm}int idv = 5}}\label{main__opengl_8cpp_aa1ca48c57c7bf3e7e44d5c5c6b7b917d}
+\hypertarget{main__opengl_8cpp_a48ada3380f6005c26b711b9a701bd20a}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!intermed@{intermed}}
+\index{intermed@{intermed}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{intermed}]{\setlength{\rightskip}{0pt plus 5cm}int intermed = 0}}\label{main__opengl_8cpp_a48ada3380f6005c26b711b9a701bd20a}
+\hypertarget{main__opengl_8cpp_a35b44e70b5291d4c6a2ddfa0ffe062e8}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!light\+\_\+ambient@{light\+\_\+ambient}}
+\index{light\+\_\+ambient@{light\+\_\+ambient}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{light\+\_\+ambient}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat light\+\_\+ambient\mbox{[}$\,$\mbox{]} = \{ 0.\+5f, 0.\+5f, 0.\+5f, 1.\+0f \}}}\label{main__opengl_8cpp_a35b44e70b5291d4c6a2ddfa0ffe062e8}
+\hypertarget{main__opengl_8cpp_ad0bc3e49164c7d5d01dd6b4a0d0fff25}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!light\+\_\+diffuse@{light\+\_\+diffuse}}
+\index{light\+\_\+diffuse@{light\+\_\+diffuse}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{light\+\_\+diffuse}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat light\+\_\+diffuse\mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}}}\label{main__opengl_8cpp_ad0bc3e49164c7d5d01dd6b4a0d0fff25}
+\hypertarget{main__opengl_8cpp_aea3c4afba5fcc8b77067671d396b577b}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!light\+\_\+position@{light\+\_\+position}}
+\index{light\+\_\+position@{light\+\_\+position}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{light\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat light\+\_\+position\mbox{[}$\,$\mbox{]} = \{ 2.\+0f, 5.\+0f, 5.\+0f, 0.\+0f \}}}\label{main__opengl_8cpp_aea3c4afba5fcc8b77067671d396b577b}
+\hypertarget{main__opengl_8cpp_a48537988fd7a403709b0a7ffcbebac77}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!light\+\_\+specular@{light\+\_\+specular}}
+\index{light\+\_\+specular@{light\+\_\+specular}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{light\+\_\+specular}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat light\+\_\+specular\mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}}}\label{main__opengl_8cpp_a48537988fd7a403709b0a7ffcbebac77}
+\hypertarget{main__opengl_8cpp_adfbd08e06a4a9fc898f6a3b9797316d8}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!mat\+\_\+ambient@{mat\+\_\+ambient}}
+\index{mat\+\_\+ambient@{mat\+\_\+ambient}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{mat\+\_\+ambient}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat mat\+\_\+ambient\mbox{[}$\,$\mbox{]} = \{ 0.\+7f, 0.\+7f, 0.\+7f, 1.\+0f \}}}\label{main__opengl_8cpp_adfbd08e06a4a9fc898f6a3b9797316d8}
+\hypertarget{main__opengl_8cpp_aabea2510d410c6e2c8470a262cdabada}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!mat\+\_\+diffuse@{mat\+\_\+diffuse}}
+\index{mat\+\_\+diffuse@{mat\+\_\+diffuse}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{mat\+\_\+diffuse}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat mat\+\_\+diffuse\mbox{[}$\,$\mbox{]} = \{ 0.\+8f, 0.\+8f, 0.\+8f, 1.\+0f \}}}\label{main__opengl_8cpp_aabea2510d410c6e2c8470a262cdabada}
+\hypertarget{main__opengl_8cpp_aa024b50a93b02ad54fc180d4729d8735}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!mat\+\_\+specular@{mat\+\_\+specular}}
+\index{mat\+\_\+specular@{mat\+\_\+specular}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{mat\+\_\+specular}]{\setlength{\rightskip}{0pt plus 5cm}const G\+Lfloat mat\+\_\+specular\mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}}}\label{main__opengl_8cpp_aa024b50a93b02ad54fc180d4729d8735}
+\hypertarget{main__opengl_8cpp_af7a035f1a720fb7a4a279410f376800b}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!n\+Full\+Screen@{n\+Full\+Screen}}
+\index{n\+Full\+Screen@{n\+Full\+Screen}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{n\+Full\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}int n\+Full\+Screen =0}}\label{main__opengl_8cpp_af7a035f1a720fb7a4a279410f376800b}
+\hypertarget{main__opengl_8cpp_a9f65c513aaad1b6275432a65f0c0e1e1}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Rot\+X@{Rot\+X}}
+\index{Rot\+X@{Rot\+X}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Rot\+X}]{\setlength{\rightskip}{0pt plus 5cm}float Rot\+X = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{main__opengl_8cpp_a9f65c513aaad1b6275432a65f0c0e1e1}
+\hypertarget{main__opengl_8cpp_aad5866cabaef516d85cd4913f27e70f9}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Rot\+Y@{Rot\+Y}}
+\index{Rot\+Y@{Rot\+Y}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Rot\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float Rot\+Y = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{main__opengl_8cpp_aad5866cabaef516d85cd4913f27e70f9}
+\hypertarget{main__opengl_8cpp_ad5803ef493f1235b956ae014d53e6092}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Rot\+Z@{Rot\+Z}}
+\index{Rot\+Z@{Rot\+Z}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Rot\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float Rot\+Z = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{main__opengl_8cpp_ad5803ef493f1235b956ae014d53e6092}
+\hypertarget{main__opengl_8cpp_afea36502e9d227ff62c5fb2719a246f2}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!t@{t}}
+\index{t@{t}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}float t =0}}\label{main__opengl_8cpp_afea36502e9d227ff62c5fb2719a246f2}
+\hypertarget{main__opengl_8cpp_ab003a1a52083f94ec0e39bb78b8295b0}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!t1@{t1}}
+\index{t1@{t1}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{t1}]{\setlength{\rightskip}{0pt plus 5cm}float t1 =0}}\label{main__opengl_8cpp_ab003a1a52083f94ec0e39bb78b8295b0}
+\hypertarget{main__opengl_8cpp_a95940fa0c2498b0cf8ee4c55d75dda0e}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!tab@{tab}}
+\index{tab@{tab}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ tab}}\label{main__opengl_8cpp_a95940fa0c2498b0cf8ee4c55d75dda0e}
+\hypertarget{main__opengl_8cpp_a3a7f1a486821291141a1c77aca9a0ec9}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!taille\+Isos@{taille\+Isos}}
+\index{taille\+Isos@{taille\+Isos}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{taille\+Isos}]{\setlength{\rightskip}{0pt plus 5cm}int taille\+Isos = 0}}\label{main__opengl_8cpp_a3a7f1a486821291141a1c77aca9a0ec9}
+\hypertarget{main__opengl_8cpp_a9efcf9efc78327c91a85e87f72bcabe3}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!taille\+Mnt@{taille\+Mnt}}
+\index{taille\+Mnt@{taille\+Mnt}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{taille\+Mnt}]{\setlength{\rightskip}{0pt plus 5cm}int taille\+Mnt = 0}}\label{main__opengl_8cpp_a9efcf9efc78327c91a85e87f72bcabe3}
+\hypertarget{main__opengl_8cpp_a71237b18c216e02629593b1969cff245}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!teste@{teste}}
+\index{teste@{teste}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{teste}]{\setlength{\rightskip}{0pt plus 5cm}int teste = 0}}\label{main__opengl_8cpp_a71237b18c216e02629593b1969cff245}
+\hypertarget{main__opengl_8cpp_a9be9c4e142966019740c3703f3393b1b}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!tmp@{tmp}}
+\index{tmp@{tmp}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ tmp}}\label{main__opengl_8cpp_a9be9c4e142966019740c3703f3393b1b}
+\hypertarget{main__opengl_8cpp_a9ddb15063606d71e97bb4a7a642e2763}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Tran\+X@{Tran\+X}}
+\index{Tran\+X@{Tran\+X}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Tran\+X}]{\setlength{\rightskip}{0pt plus 5cm}float Tran\+X = 0}}\label{main__opengl_8cpp_a9ddb15063606d71e97bb4a7a642e2763}
+\hypertarget{main__opengl_8cpp_a52d144c40af2b0a109b4039ee6c3f2a8}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Tran\+Y@{Tran\+Y}}
+\index{Tran\+Y@{Tran\+Y}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Tran\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float Tran\+Y = 0}}\label{main__opengl_8cpp_a52d144c40af2b0a109b4039ee6c3f2a8}
+\hypertarget{main__opengl_8cpp_ace889943cb0e8bd50387275c6b27862d}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!Tran\+Z@{Tran\+Z}}
+\index{Tran\+Z@{Tran\+Z}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{Tran\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float Tran\+Z = 0}}\label{main__opengl_8cpp_ace889943cb0e8bd50387275c6b27862d}
+\hypertarget{main__opengl_8cpp_a59657169fbae91a2b49e70def42768d7}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!triangles@{triangles}}
+\index{triangles@{triangles}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{triangles}]{\setlength{\rightskip}{0pt plus 5cm}int triangles =0}}\label{main__opengl_8cpp_a59657169fbae91a2b49e70def42768d7}
+\hypertarget{main__opengl_8cpp_a73b6969f44c22c858db985954416b33e}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!typedist@{typedist}}
+\index{typedist@{typedist}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{typedist}]{\setlength{\rightskip}{0pt plus 5cm}int typedist = 0}}\label{main__opengl_8cpp_a73b6969f44c22c858db985954416b33e}
+\hypertarget{main__opengl_8cpp_ad0d38886963f535e6f051ac2c2ff16d5}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!vect@{vect}}
+\index{vect@{vect}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{vect}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ vect}}\label{main__opengl_8cpp_ad0d38886963f535e6f051ac2c2ff16d5}
+\hypertarget{main__opengl_8cpp_ab88cd10442ab875379a07144bdc30392}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!vectisohypse@{vectisohypse}}
+\index{vectisohypse@{vectisohypse}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{vectisohypse}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$vector$<$vector$<$double$>$ $>$ $>$ $>$ vectisohypse}}\label{main__opengl_8cpp_ab88cd10442ab875379a07144bdc30392}
+\hypertarget{main__opengl_8cpp_a81ceb4deb3327b606fc3a1c09aa43576}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!vit@{vit}}
+\index{vit@{vit}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{vit}]{\setlength{\rightskip}{0pt plus 5cm}int vit = 1000}}\label{main__opengl_8cpp_a81ceb4deb3327b606fc3a1c09aa43576}
+\hypertarget{main__opengl_8cpp_ad8aea8b687210b3742026bd1a55f4fe3}{\index{main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}!vtab@{vtab}}
+\index{vtab@{vtab}!main\+\_\+opengl.\+cpp@{main\+\_\+opengl.\+cpp}}
+\subsubsection[{vtab}]{\setlength{\rightskip}{0pt plus 5cm}double vtab\mbox{[}11\mbox{]}}}\label{main__opengl_8cpp_ad8aea8b687210b3742026bd1a55f4fe3}

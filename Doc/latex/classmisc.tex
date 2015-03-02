@@ -1,0 +1,233 @@
+\hypertarget{classmisc}{\section{misc Class Reference}
+\label{classmisc}\index{misc@{misc}}
+}
+
+
+Library of miscellaneous functions.  
+
+
+
+
+{\ttfamily \#include $<$misc.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classmisc_a608031443e98c0e928a6bb6c015a5d42}{time\+String2seconds\+Since\+Epoch} (Q\+String time\+String)
+\begin{DoxyCompactList}\small\item\em converts a Q\+String containing a date to a number of seconds since 01-\/01-\/2000 \end{DoxyCompactList}\item 
+static std\+::vector\\*
+$<$ std\+::vector$<$ double $>$ $>$ \hyperlink{classmisc_acc883f47fd645017a01b64acfef7d939}{wgs2l93} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ wgs\+Vector)
+\begin{DoxyCompactList}\small\item\em converts coordinates from wgs84 to lambert93 \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classmisc_a038d785a1201a45c9007b0d74ba29119}{qstring2string} (Q\+String qtext)
+\begin{DoxyCompactList}\small\item\em converts a qstring to a string \end{DoxyCompactList}\item 
+static double $\ast$$\ast$ \hyperlink{classmisc_a145eb0cd24980db15f0e892b675fb0d8}{to\+Array} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&my\+Vector)
+\begin{DoxyCompactList}\small\item\em converts a bidimensional vector to a bidimensional array \end{DoxyCompactList}\item 
+static double $\ast$ \hyperlink{classmisc_a93a4f4d5d68e01eda11362aede08adf4}{to\+Array} (std\+::vector$<$ double $>$ \&my\+Vector)
+\begin{DoxyCompactList}\small\item\em converts a monodimensional vector to a monodimensional array \end{DoxyCompactList}\item 
+static std\+::vector\\*
+$<$ std\+::vector$<$ double $>$ $>$ \hyperlink{classmisc_ab467556a0e0594311056dcb0c7e0cf2a}{retourne} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ my\+Vector)
+\begin{DoxyCompactList}\small\item\em flips a vector upside-\/down, so that the first element becomes last, and the last first. \end{DoxyCompactList}\item 
+static void \hyperlink{classmisc_afffffea46758534b88703a1bc5fd49e2}{concatenate} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$vect1, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$vect2)
+\begin{DoxyCompactList}\small\item\em concatenates two vectors given by pointers \end{DoxyCompactList}\item 
+static std\+::vector\\*
+$<$ std\+::vector$<$ double $>$ $>$ \hyperlink{classmisc_aa5c6fc4131f30aa12e7ed5d22d642e72}{concatenate} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ vect1, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ vect2)
+\begin{DoxyCompactList}\small\item\em concatenates two vectors \end{DoxyCompactList}\item 
+static double \hyperlink{classmisc_ab558accbc124dedb9ca2648ff2f5130f}{dist\+Calc} (double x1, double y1, double x2, double y2)
+\begin{DoxyCompactList}\small\item\em conmputes the euclidian distance between to points, on a plane \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library of miscellaneous functions. 
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clement.drouadaine@ensg.eu}{\tt clement.\+drouadaine@ensg.\+eu}, \href{mailto:marie.aladenise@ensg.eu}{\tt marie.\+aladenise@ensg.\+eu}, \href{mailto:philemon.renaud@ensg.eu}{\tt philemon.\+renaud@ensg.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+autumn 2014 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmisc_afffffea46758534b88703a1bc5fd49e2}{\index{misc@{misc}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!misc@{misc}}
+\subsubsection[{concatenate}]{\setlength{\rightskip}{0pt plus 5cm}static void misc\+::concatenate (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$}]{vect1, }
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$}]{vect2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_afffffea46758534b88703a1bc5fd49e2}
+
+
+concatenates two vectors given by pointers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$$\ast$ vect1, a pointer to the initial vector that will be modified \\
+\hline
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$$\ast$ vect2, the vector to be added at the end of vect1 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmisc_aa5c6fc4131f30aa12e7ed5d22d642e72}{\index{misc@{misc}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!misc@{misc}}
+\subsubsection[{concatenate}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$ std\+::vector$<$ double $>$ $>$ misc\+::concatenate (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{vect1, }
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{vect2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_aa5c6fc4131f30aa12e7ed5d22d642e72}
+
+
+concatenates two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ vect1\+: the first vector \\
+\hline
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ vect2\+: the vector to be added at the end of vect1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$double$>$ $>$ vect\+: the result of the concatenation 
+\end{DoxyReturn}
+\hypertarget{classmisc_ab558accbc124dedb9ca2648ff2f5130f}{\index{misc@{misc}!dist\+Calc@{dist\+Calc}}
+\index{dist\+Calc@{dist\+Calc}!misc@{misc}}
+\subsubsection[{dist\+Calc}]{\setlength{\rightskip}{0pt plus 5cm}static double misc\+::dist\+Calc (
+\begin{DoxyParamCaption}
+\item[{double}]{x1, }
+\item[{double}]{y1, }
+\item[{double}]{x2, }
+\item[{double}]{y2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_ab558accbc124dedb9ca2648ff2f5130f}
+
+
+conmputes the euclidian distance between to points, on a plane 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x1, y1, x2, y2\+: the coordinates of the two points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance 
+\end{DoxyReturn}
+\hypertarget{classmisc_a038d785a1201a45c9007b0d74ba29119}{\index{misc@{misc}!qstring2string@{qstring2string}}
+\index{qstring2string@{qstring2string}!misc@{misc}}
+\subsubsection[{qstring2string}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string misc\+::qstring2string (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{qtext}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_a038d785a1201a45c9007b0d74ba29119}
+
+
+converts a qstring to a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & qtext\+: the Q\+String to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\hypertarget{classmisc_ab467556a0e0594311056dcb0c7e0cf2a}{\index{misc@{misc}!retourne@{retourne}}
+\index{retourne@{retourne}!misc@{misc}}
+\subsubsection[{retourne}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$ std\+::vector$<$ double $>$ $>$ misc\+::retourne (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{my\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_ab467556a0e0594311056dcb0c7e0cf2a}
+
+
+flips a vector upside-\/down, so that the first element becomes last, and the last first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ my\+Vector\+: the vector to flip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$double$>$ $>$ flipped\+: the flipped vector 
+\end{DoxyReturn}
+\hypertarget{classmisc_a608031443e98c0e928a6bb6c015a5d42}{\index{misc@{misc}!time\+String2seconds\+Since\+Epoch@{time\+String2seconds\+Since\+Epoch}}
+\index{time\+String2seconds\+Since\+Epoch@{time\+String2seconds\+Since\+Epoch}!misc@{misc}}
+\subsubsection[{time\+String2seconds\+Since\+Epoch}]{\setlength{\rightskip}{0pt plus 5cm}static double misc\+::time\+String2seconds\+Since\+Epoch (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{time\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_a608031443e98c0e928a6bb6c015a5d42}
+
+
+converts a Q\+String containing a date to a number of seconds since 01-\/01-\/2000 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & time\+String\+: a date, in format yyyy-\/\+M\+M-\/dd'T'hh\+:mm\+:ss'Z' (ie 2014-\/12-\/02\+T11\+:34\+:25\+Z) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of seconds between the date in the string and 01-\/01-\/2000 
+\end{DoxyReturn}
+\hypertarget{classmisc_a145eb0cd24980db15f0e892b675fb0d8}{\index{misc@{misc}!to\+Array@{to\+Array}}
+\index{to\+Array@{to\+Array}!misc@{misc}}
+\subsubsection[{to\+Array}]{\setlength{\rightskip}{0pt plus 5cm}static double $\ast$$\ast$ misc\+::to\+Array (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{my\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_a145eb0cd24980db15f0e892b675fb0d8}
+
+
+converts a bidimensional vector to a bidimensional array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ \&my\+Vector\+: the vector to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the converted array 
+\end{DoxyReturn}
+\hypertarget{classmisc_a93a4f4d5d68e01eda11362aede08adf4}{\index{misc@{misc}!to\+Array@{to\+Array}}
+\index{to\+Array@{to\+Array}!misc@{misc}}
+\subsubsection[{to\+Array}]{\setlength{\rightskip}{0pt plus 5cm}static double $\ast$ misc\+::to\+Array (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$ \&}]{my\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_a93a4f4d5d68e01eda11362aede08adf4}
+
+
+converts a monodimensional vector to a monodimensional array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$double$>$} & \&my\+Vector\+: the vector to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the converted array 
+\end{DoxyReturn}
+\hypertarget{classmisc_acc883f47fd645017a01b64acfef7d939}{\index{misc@{misc}!wgs2l93@{wgs2l93}}
+\index{wgs2l93@{wgs2l93}!misc@{misc}}
+\subsubsection[{wgs2l93}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$ std\+::vector$<$ double $>$ $>$ misc\+::wgs2l93 (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{wgs\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmisc_acc883f47fd645017a01b64acfef7d939}
+
+
+converts coordinates from wgs84 to lambert93 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ wgs\+Vector\+: a vector of points to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::vector$<$double$>$ $>$ containing the converted points 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{misc_8h}{misc.\+h}\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{misc_8cpp}{misc.\+cpp}\end{DoxyCompactItemize}

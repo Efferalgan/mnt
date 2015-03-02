@@ -1,0 +1,266 @@
+\hypertarget{classmafenetre}{\section{mafenetre Class Reference}
+\label{classmafenetre}\index{mafenetre@{mafenetre}}
+}
+
+
+Creating of a mainwindow with widgets to configure and launch the Open\+G\+L animation.  
+
+
+
+
+{\ttfamily \#include $<$mafenetre.\+h$>$}
+
+
+
+Inheritance diagram for mafenetre\+:
+
+
+Collaboration diagram for mafenetre\+:
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmafenetre_acecb96ebac740d275238059027ebdebd}{retourner\+Choix} ()
+\begin{DoxyCompactList}\small\item\em retourner\+Choix\+: sets the boolean choix\+Vitesse\+Reelle to true if real speed is selected and set spinval to a default value \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a9934d3087e71db610c1ac37d96194c99}{retourner\+Choix\+Constante} ()
+\begin{DoxyCompactList}\small\item\em retourner\+Choix\+Constante\+: sets the boolean choix\+Vitesse\+Reelle to false if constant real is selected \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmafenetre_a8a5ddad65209dae0db28cad9ca448a6b}{selection\+Fichier} (std\+::string \&extensions)
+\begin{DoxyCompactList}\small\item\em selection\+Fichier \+:to choose a file from a Q\+Dialog and return absolute path of the selected file \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_ac7dc61a32b19bc1bba079e3cc3cabd97}{adresse\+M\+N\+T} ()
+\begin{DoxyCompactList}\small\item\em adresse\+M\+N\+T\+: return absolute path of a mnt file \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a9d0c2380948d6ba6b3c01a826be0f2f1}{adresse\+G\+P\+X} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_a9d0c2380948d6ba6b3c01a826be0f2f1}{adresse\+G\+P\+X()}\+:return absolute path of a gpx file \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a192319ece816878570f7a19bbc147d45}{activer\+Spin} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_a192319ece816878570f7a19bbc147d45}{activer\+Spin()}\+: desactivate the spinbox on the interface \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a0e27ded7d39843750642869a52fcce82}{desactiver\+Spin} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_a0e27ded7d39843750642869a52fcce82}{desactiver\+Spin()}\+: desactivate the spinbox on the interface \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_ad1d5f0f4900613ce2e026822a9456b0c}{lancer\+Open\+Gl} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_ad1d5f0f4900613ce2e026822a9456b0c}{lancer\+Open\+Gl()}\+:launch Open\+G\+L animation \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a681933489d46a01d191a13e3f3e8dd34}{activer\+Aide} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_a681933489d46a01d191a13e3f3e8dd34}{activer\+Aide()}\+: help tips \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_a2af9b56b363ca1f30ea8c8f023a9ac91}{desactiver\+Gpx} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_a2af9b56b363ca1f30ea8c8f023a9ac91}{desactiver\+Gpx()} \+: manage widgets according to the user choice to show only the mnt or the mnt and the gpx \end{DoxyCompactList}\item 
+void \hyperlink{classmafenetre_ac7c87be0ace6260777b0da266ffbb705}{set\+Value} (int \hyperlink{main__opengl_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmafenetre_ac7c87be0ace6260777b0da266ffbb705}{set\+Value(int a)}\+: set the value of spin\+Val according to the choice of the user \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmafenetre_a6b3fd3485eac1fabe70e3b238b8e5cbc}{mafenetre} ()
+\begin{DoxyCompactList}\small\item\em set\+Position\+: defines position of the mainwindow on the screen \end{DoxyCompactList}\item 
+\hyperlink{classmafenetre_a4583bb1988a99e01a1b4921c0b55e47e}{$\sim$mafenetre} ()
+\begin{DoxyCompactList}\small\item\em $\sim$mafenetre\+: destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmafenetre_a64a51218343d46e32cdf6d8ff41c1919}{spinval}
+\begin{DoxyCompactList}\small\item\em value of the choosen speed \end{DoxyCompactList}\item 
+bool \hyperlink{classmafenetre_ac66e90f34e0f0dc5a9bb2e43c7acfe90}{choix\+Vitesse\+Reelle}
+\begin{DoxyCompactList}\small\item\em true if real speed is selected by the user \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classmafenetre_af9607457086703b72098cc05d5b9a553}{mnt\+Path}
+\begin{DoxyCompactList}\small\item\em path of the choosen mnt \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classmafenetre_af0c130d9533f8f43e363c7b5c4496b91}{gpx\+Path}
+\begin{DoxyCompactList}\small\item\em path of the choosen gpx \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creating of a mainwindow with widgets to configure and launch the Open\+G\+L animation. 
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clement.drouadaine@ensg.eu}{\tt clement.\+drouadaine@ensg.\+eu}, \href{mailto:philemon.renaud@ensg.eu}{\tt philemon.\+renaud@ensg.\+eu}, \href{mailto:marie.aladenise@ensg.eu}{\tt marie.\+aladenise@ensg.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2014 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmafenetre_a6b3fd3485eac1fabe70e3b238b8e5cbc}{\index{mafenetre@{mafenetre}!mafenetre@{mafenetre}}
+\index{mafenetre@{mafenetre}!mafenetre@{mafenetre}}
+\subsubsection[{mafenetre}]{\setlength{\rightskip}{0pt plus 5cm}mafenetre\+::mafenetre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmafenetre_a6b3fd3485eac1fabe70e3b238b8e5cbc}
+
+
+set\+Position\+: defines position of the mainwindow on the screen 
+
+mafenetre\+: constructor \hypertarget{classmafenetre_a4583bb1988a99e01a1b4921c0b55e47e}{\index{mafenetre@{mafenetre}!````~mafenetre@{$\sim$mafenetre}}
+\index{````~mafenetre@{$\sim$mafenetre}!mafenetre@{mafenetre}}
+\subsubsection[{$\sim$mafenetre}]{\setlength{\rightskip}{0pt plus 5cm}mafenetre\+::$\sim$mafenetre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmafenetre_a4583bb1988a99e01a1b4921c0b55e47e}
+
+
+$\sim$mafenetre\+: destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmafenetre_a681933489d46a01d191a13e3f3e8dd34}{\index{mafenetre@{mafenetre}!activer\+Aide@{activer\+Aide}}
+\index{activer\+Aide@{activer\+Aide}!mafenetre@{mafenetre}}
+\subsubsection[{activer\+Aide}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::activer\+Aide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a681933489d46a01d191a13e3f3e8dd34}
+
+
+\hyperlink{classmafenetre_a681933489d46a01d191a13e3f3e8dd34}{activer\+Aide()}\+: help tips 
+
+\hypertarget{classmafenetre_a192319ece816878570f7a19bbc147d45}{\index{mafenetre@{mafenetre}!activer\+Spin@{activer\+Spin}}
+\index{activer\+Spin@{activer\+Spin}!mafenetre@{mafenetre}}
+\subsubsection[{activer\+Spin}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::activer\+Spin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a192319ece816878570f7a19bbc147d45}
+
+
+\hyperlink{classmafenetre_a192319ece816878570f7a19bbc147d45}{activer\+Spin()}\+: desactivate the spinbox on the interface 
+
+\hypertarget{classmafenetre_a9d0c2380948d6ba6b3c01a826be0f2f1}{\index{mafenetre@{mafenetre}!adresse\+G\+P\+X@{adresse\+G\+P\+X}}
+\index{adresse\+G\+P\+X@{adresse\+G\+P\+X}!mafenetre@{mafenetre}}
+\subsubsection[{adresse\+G\+P\+X}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::adresse\+G\+P\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a9d0c2380948d6ba6b3c01a826be0f2f1}
+
+
+\hyperlink{classmafenetre_a9d0c2380948d6ba6b3c01a826be0f2f1}{adresse\+G\+P\+X()}\+:return absolute path of a gpx file 
+
+\hypertarget{classmafenetre_ac7dc61a32b19bc1bba079e3cc3cabd97}{\index{mafenetre@{mafenetre}!adresse\+M\+N\+T@{adresse\+M\+N\+T}}
+\index{adresse\+M\+N\+T@{adresse\+M\+N\+T}!mafenetre@{mafenetre}}
+\subsubsection[{adresse\+M\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::adresse\+M\+N\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_ac7dc61a32b19bc1bba079e3cc3cabd97}
+
+
+adresse\+M\+N\+T\+: return absolute path of a mnt file 
+
+\hypertarget{classmafenetre_a2af9b56b363ca1f30ea8c8f023a9ac91}{\index{mafenetre@{mafenetre}!desactiver\+Gpx@{desactiver\+Gpx}}
+\index{desactiver\+Gpx@{desactiver\+Gpx}!mafenetre@{mafenetre}}
+\subsubsection[{desactiver\+Gpx}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::desactiver\+Gpx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a2af9b56b363ca1f30ea8c8f023a9ac91}
+
+
+\hyperlink{classmafenetre_a2af9b56b363ca1f30ea8c8f023a9ac91}{desactiver\+Gpx()} \+: manage widgets according to the user choice to show only the mnt or the mnt and the gpx 
+
+\hypertarget{classmafenetre_a0e27ded7d39843750642869a52fcce82}{\index{mafenetre@{mafenetre}!desactiver\+Spin@{desactiver\+Spin}}
+\index{desactiver\+Spin@{desactiver\+Spin}!mafenetre@{mafenetre}}
+\subsubsection[{desactiver\+Spin}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::desactiver\+Spin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a0e27ded7d39843750642869a52fcce82}
+
+
+\hyperlink{classmafenetre_a0e27ded7d39843750642869a52fcce82}{desactiver\+Spin()}\+: desactivate the spinbox on the interface 
+
+\hypertarget{classmafenetre_ad1d5f0f4900613ce2e026822a9456b0c}{\index{mafenetre@{mafenetre}!lancer\+Open\+Gl@{lancer\+Open\+Gl}}
+\index{lancer\+Open\+Gl@{lancer\+Open\+Gl}!mafenetre@{mafenetre}}
+\subsubsection[{lancer\+Open\+Gl}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::lancer\+Open\+Gl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_ad1d5f0f4900613ce2e026822a9456b0c}
+
+
+\hyperlink{classmafenetre_ad1d5f0f4900613ce2e026822a9456b0c}{lancer\+Open\+Gl()}\+:launch Open\+G\+L animation 
+
+\hypertarget{classmafenetre_acecb96ebac740d275238059027ebdebd}{\index{mafenetre@{mafenetre}!retourner\+Choix@{retourner\+Choix}}
+\index{retourner\+Choix@{retourner\+Choix}!mafenetre@{mafenetre}}
+\subsubsection[{retourner\+Choix}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::retourner\+Choix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_acecb96ebac740d275238059027ebdebd}
+
+
+retourner\+Choix\+: sets the boolean choix\+Vitesse\+Reelle to true if real speed is selected and set spinval to a default value 
+
+\hypertarget{classmafenetre_a9934d3087e71db610c1ac37d96194c99}{\index{mafenetre@{mafenetre}!retourner\+Choix\+Constante@{retourner\+Choix\+Constante}}
+\index{retourner\+Choix\+Constante@{retourner\+Choix\+Constante}!mafenetre@{mafenetre}}
+\subsubsection[{retourner\+Choix\+Constante}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::retourner\+Choix\+Constante (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a9934d3087e71db610c1ac37d96194c99}
+
+
+retourner\+Choix\+Constante\+: sets the boolean choix\+Vitesse\+Reelle to false if constant real is selected 
+
+\hypertarget{classmafenetre_a8a5ddad65209dae0db28cad9ca448a6b}{\index{mafenetre@{mafenetre}!selection\+Fichier@{selection\+Fichier}}
+\index{selection\+Fichier@{selection\+Fichier}!mafenetre@{mafenetre}}
+\subsubsection[{selection\+Fichier}]{\setlength{\rightskip}{0pt plus 5cm}string mafenetre\+::selection\+Fichier (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{extensions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_a8a5ddad65209dae0db28cad9ca448a6b}
+
+
+selection\+Fichier \+:to choose a file from a Q\+Dialog and return absolute path of the selected file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extensions} & \+: extension of the file for which we are looking for a path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+absolute path to the selected file 
+\end{DoxyReturn}
+\hypertarget{classmafenetre_ac7c87be0ace6260777b0da266ffbb705}{\index{mafenetre@{mafenetre}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!mafenetre@{mafenetre}}
+\subsubsection[{set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void mafenetre\+::set\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classmafenetre_ac7c87be0ace6260777b0da266ffbb705}
+
+
+\hyperlink{classmafenetre_ac7c87be0ace6260777b0da266ffbb705}{set\+Value(int a)}\+: set the value of spin\+Val according to the choice of the user 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmafenetre_ac66e90f34e0f0dc5a9bb2e43c7acfe90}{\index{mafenetre@{mafenetre}!choix\+Vitesse\+Reelle@{choix\+Vitesse\+Reelle}}
+\index{choix\+Vitesse\+Reelle@{choix\+Vitesse\+Reelle}!mafenetre@{mafenetre}}
+\subsubsection[{choix\+Vitesse\+Reelle}]{\setlength{\rightskip}{0pt plus 5cm}bool mafenetre\+::choix\+Vitesse\+Reelle}}\label{classmafenetre_ac66e90f34e0f0dc5a9bb2e43c7acfe90}
+
+
+true if real speed is selected by the user 
+
+\hypertarget{classmafenetre_af0c130d9533f8f43e363c7b5c4496b91}{\index{mafenetre@{mafenetre}!gpx\+Path@{gpx\+Path}}
+\index{gpx\+Path@{gpx\+Path}!mafenetre@{mafenetre}}
+\subsubsection[{gpx\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String mafenetre\+::gpx\+Path}}\label{classmafenetre_af0c130d9533f8f43e363c7b5c4496b91}
+
+
+path of the choosen gpx 
+
+\hypertarget{classmafenetre_af9607457086703b72098cc05d5b9a553}{\index{mafenetre@{mafenetre}!mnt\+Path@{mnt\+Path}}
+\index{mnt\+Path@{mnt\+Path}!mafenetre@{mafenetre}}
+\subsubsection[{mnt\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String mafenetre\+::mnt\+Path}}\label{classmafenetre_af9607457086703b72098cc05d5b9a553}
+
+
+path of the choosen mnt 
+
+\hypertarget{classmafenetre_a64a51218343d46e32cdf6d8ff41c1919}{\index{mafenetre@{mafenetre}!spinval@{spinval}}
+\index{spinval@{spinval}!mafenetre@{mafenetre}}
+\subsubsection[{spinval}]{\setlength{\rightskip}{0pt plus 5cm}int mafenetre\+::spinval}}\label{classmafenetre_a64a51218343d46e32cdf6d8ff41c1919}
+
+
+value of the choosen speed 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{mafenetre_8h}{mafenetre.\+h}\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{mafenetre_8cpp}{mafenetre.\+cpp}\end{DoxyCompactItemize}

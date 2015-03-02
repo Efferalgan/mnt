@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['classbyalti',['classByAlti',['../mnt_8cpp.html#a6539c41498e28e029793a5a3f78af684',1,'classByAlti(vector&lt; vector&lt; double &gt; &gt; vectorOfPoints, double *arrayOfAlti, int arraySize):&#160;mnt.cpp'],['../mnt_8h.html#a324cbea92ea904c6f00e249b6f047b26',1,'classByAlti(std::vector&lt; std::vector&lt; double &gt; &gt; vectorOfPoints, double *arrayOfAlti, int arraySize):&#160;mnt.h']]],
+  ['computewhereout',['computeWhereOut',['../gpx_8cpp.html#a35f3b3a112cbd6312b657d32dacb9c4d',1,'computeWhereOut(double x1, double x2, double y1, double y2, double t1, double t2, mnt myMnt):&#160;gpx.cpp'],['../gpx_8h.html#a307d5a6fe0bc9727ed1fc1f40b8fcd2b',1,'computeWhereOut(double x1, double y1, double x2, double y2, double t1, double t2, mnt myMnt):&#160;gpx.cpp']]],
+  ['concatenate',['concatenate',['../classmisc.html#afffffea46758534b88703a1bc5fd49e2',1,'misc::concatenate(std::vector&lt; std::vector&lt; double &gt; &gt; *vect1, std::vector&lt; std::vector&lt; double &gt; &gt; *vect2)'],['../classmisc.html#aa5c6fc4131f30aa12e7ed5d22d642e72',1,'misc::concatenate(std::vector&lt; std::vector&lt; double &gt; &gt; vect1, std::vector&lt; std::vector&lt; double &gt; &gt; vect2)']]]
+];

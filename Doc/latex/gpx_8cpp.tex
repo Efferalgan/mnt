@@ -1,0 +1,73 @@
+\hypertarget{gpx_8cpp}{\section{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/gpx.cpp File Reference}
+\label{gpx_8cpp}\index{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/gpx.\+cpp@{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/gpx.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}gpx.\+h\char`\"{}}\\*
+Include dependency graph for gpx.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \hyperlink{gpx_8cpp_a35f3b3a112cbd6312b657d32dacb9c4d}{compute\+Where\+Out} (double x1, double x2, double y1, double y2, double \hyperlink{main__opengl_8cpp_ab003a1a52083f94ec0e39bb78b8295b0}{t1}, double t2, \hyperlink{classmnt}{mnt} my\+Mnt)
+\begin{DoxyCompactList}\small\item\em given two points A \& B and a D\+E\+M, computes where \mbox{[}A\+B\mbox{]} gets out of the D\+E\+M bounds, and replace the faulty extremity of \mbox{[}A\+B\mbox{]} with the intersection with the D\+E\+M \end{DoxyCompactList}\item 
+double \hyperlink{gpx_8cpp_af3a271687e8e26a28b0b064a5593b59b}{dist\+Between\+Points\+Following\+Mnt} (double x1, double x2, double y1, double y2, \hyperlink{classmnt}{mnt} my\+Mnt)
+\item 
+bool \hyperlink{gpx_8cpp_a45f8abfd09a103590c1ceb6635b79fc7}{test\+\_\+\+Where\+Out} ()
+\begin{DoxyCompactList}\small\item\em tests the compute\+Where\+Out function with a small D\+E\+M, to see if it works as expected \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{gpx_8cpp_a35f3b3a112cbd6312b657d32dacb9c4d}{\index{gpx.\+cpp@{gpx.\+cpp}!compute\+Where\+Out@{compute\+Where\+Out}}
+\index{compute\+Where\+Out@{compute\+Where\+Out}!gpx.\+cpp@{gpx.\+cpp}}
+\subsubsection[{compute\+Where\+Out}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ double $>$ compute\+Where\+Out (
+\begin{DoxyParamCaption}
+\item[{double}]{x1, }
+\item[{double}]{y1, }
+\item[{double}]{x2, }
+\item[{double}]{y2, }
+\item[{double}]{t1, }
+\item[{double}]{t2, }
+\item[{{\bf mnt}}]{my\+Mnt}
+\end{DoxyParamCaption}
+)}}\label{gpx_8cpp_a35f3b3a112cbd6312b657d32dacb9c4d}
+
+
+given two points A \& B and a D\+E\+M, computes where \mbox{[}A\+B\mbox{]} gets out of the D\+E\+M bounds, and replace the faulty extremity of \mbox{[}A\+B\mbox{]} with the intersection with the D\+E\+M 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x1, y1, z1\+: coordinates of the first point \\
+\hline
+{\em double} & x2, y2, z2\+: coordinates of the second point \\
+\hline
+{\em double} & t1, t2\+: time for the points \\
+\hline
+{\em mnt} & my\+Mnt\+: the D\+E\+M \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$double$>$ containing two points, such as the truncated segment now fits within the D\+E\+M 
+\end{DoxyReturn}
+\hypertarget{gpx_8cpp_af3a271687e8e26a28b0b064a5593b59b}{\index{gpx.\+cpp@{gpx.\+cpp}!dist\+Between\+Points\+Following\+Mnt@{dist\+Between\+Points\+Following\+Mnt}}
+\index{dist\+Between\+Points\+Following\+Mnt@{dist\+Between\+Points\+Following\+Mnt}!gpx.\+cpp@{gpx.\+cpp}}
+\subsubsection[{dist\+Between\+Points\+Following\+Mnt}]{\setlength{\rightskip}{0pt plus 5cm}double dist\+Between\+Points\+Following\+Mnt (
+\begin{DoxyParamCaption}
+\item[{double}]{x1, }
+\item[{double}]{x2, }
+\item[{double}]{y1, }
+\item[{double}]{y2, }
+\item[{{\bf mnt}}]{my\+Mnt}
+\end{DoxyParamCaption}
+)}}\label{gpx_8cpp_af3a271687e8e26a28b0b064a5593b59b}
+\hypertarget{gpx_8cpp_a45f8abfd09a103590c1ceb6635b79fc7}{\index{gpx.\+cpp@{gpx.\+cpp}!test\+\_\+\+Where\+Out@{test\+\_\+\+Where\+Out}}
+\index{test\+\_\+\+Where\+Out@{test\+\_\+\+Where\+Out}!gpx.\+cpp@{gpx.\+cpp}}
+\subsubsection[{test\+\_\+\+Where\+Out}]{\setlength{\rightskip}{0pt plus 5cm}test\+\_\+\+Where\+Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{gpx_8cpp_a45f8abfd09a103590c1ceb6635b79fc7}
+
+
+tests the compute\+Where\+Out function with a small D\+E\+M, to see if it works as expected 
+
+\begin{DoxyReturn}{Returns}
+a bool, true if successful, false otherwise 
+\end{DoxyReturn}

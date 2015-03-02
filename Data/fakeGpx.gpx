@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>fakeGpx</name>
+  </metadata>
+  <trk>
+    <name>fakeGpx</name>
+    <trkseg>
+      <trkpt lat="0" lon="0">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="0.001" lon="0">
+        <ele>5</ele>
+      </trkpt>
+      <trkpt lat="0.001" lon="0.001">
+        <ele>5.45415163040161</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

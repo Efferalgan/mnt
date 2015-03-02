@@ -1,0 +1,608 @@
+\hypertarget{classmnt}{\section{mnt Class Reference}
+\label{classmnt}\index{mnt@{mnt}}
+}
+
+
+Deals with the D\+E\+M \& the isohypses.  
+
+
+
+
+{\ttfamily \#include $<$mnt.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmnt_a6364f0c2b3c9e22892412d801c190a3b}{mnt} (Q\+String path, bool compute\+Isohypses=true)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classmnt_a8c529a4579c4acfbd7a0a39209b50351}{mnt} (double $\ast$$\ast$mnt\+Mnt, int size\+X, int size\+Y, double nodata\+Value, double cell\+Size, int number\+Of\+Isohypses, double $\ast$altitude\+Of\+Isohypses)
+\item 
+\hyperlink{classmnt_a14e56996e6241d28e7aaad061496e8fe}{$\sim$mnt} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{classmnt_a6e7ba851b2e61445405e157873a86e7c}{from\+File} (Q\+String path)
+\begin{DoxyCompactList}\small\item\em the main subroutine of the constructor \end{DoxyCompactList}\item 
+int \hyperlink{classmnt_a13e8f8a15dabb1325fd82329af205b55}{get\+Size\+X} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+int \hyperlink{classmnt_a3c02bb363dc1f50d10c25d1a16c381bb}{get\+Size\+Y} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+int \hyperlink{classmnt_a4316ef2f545152a990af37b1d0baf342}{get\+Nodata\+Value} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+double \hyperlink{classmnt_a5389db8a71d75879b01aa76fac9a71eb}{get\+Cell\+Size} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{classmnt_abbbd15d59bca64abc7a374b97717a317}{get\+Mnt} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a479074a193ec1c5d669984035da98e83}{print} ()
+\begin{DoxyCompactList}\small\item\em prints a D\+E\+M \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_acde47c4abd14447b8e70f5d03702294b}{resize\+Mnt} (int new\+Size)
+\begin{DoxyCompactList}\small\item\em cuts the D\+E\+M to make a square of the specified size, starting with the top left corner. Stores result in \+\_\+mnt. \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_aedbc5d1b46cfa97f366d9554fd0737ef}{set\+Altitudes\+Of\+Isohypses} ()
+\begin{DoxyCompactList}\small\item\em computes the optimal altitudes for the isolines to be computed, and stores it into \+\_\+altitudes\+Of\+Isohypses \end{DoxyCompactList}\item 
+int \hyperlink{classmnt_a141910258ecc57ecf8ac4efc9ce4e652}{get\+Number\+Of\+Isohypses} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classmnt_aeb54a14efadb46ddcb27229fc328ac74}{get\+Altitudes\+Of\+Isohypses} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classmnt_ac239b545c24f5534a6c4a008e1eb4138}{get\+Min\+Max\+Z} ()
+\begin{DoxyCompactList}\small\item\em gets the min an max value of z in the D\+E\+M \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ double $>$ $>$ \hyperlink{classmnt_a0837eecf07eee5211b07ac751f426403}{intersection\+Points\+Z} ()
+\begin{DoxyCompactList}\small\item\em computes all the points of all the isohypses, in random order \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_af991e721614ad91a1996503dee8206c3}{ajout\+Point\+Z} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&\hyperlink{main__opengl_8cpp_ad0d38886963f535e6f051ac2c2ff16d5}{vect}, double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em adds a point of coordinates x, y, z, to the vector \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a9ec26153c6945ea6fabcb5533cd9db7d}{isohypses\+From\+Points} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ vector\+Of\+Points)
+\begin{DoxyCompactList}\small\item\em D\+E\+P\+R\+E\+C\+A\+T\+E\+D. Makes isohypses from a list of unordered points, and stores it in the \+\_\+isohypses attribute. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ std\+::vector$<$ std\+::vector\\*
+$<$ double $>$ $>$ $>$ $>$ \hyperlink{classmnt_a872d1370959a937b22f9a09cc2dd1a2e}{get\+Isohypses} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a88c85808c2daf769f831ccdd44686fa3}{write\+Isohypses\+To\+File} (Q\+String path)
+\begin{DoxyCompactList}\small\item\em saves the isohypses in an xml file \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a7b634e9fc6e3f2ac5fc197ec9768aa7d}{read\+Isohypses\+From\+File} (Q\+String path)
+\begin{DoxyCompactList}\small\item\em reads isohypses from an xml file, and manages the attributes \+\_\+altitudes\+Of\+Isohypses, \+\_\+number\+Of\+Isohypses and \+\_\+isohypses accordingly \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a2cae85690dd0565926b808ef0aa74323}{triangles} ()
+\begin{DoxyCompactList}\small\item\em creates the list of triangles (ie a vector containing vectors of three points) from the D\+E\+M, and stores it into \+\_\+triangles \end{DoxyCompactList}\item 
+void \hyperlink{classmnt_a8158d8a011f9804c392165fa7a5457ca}{make\+Isohypses} ()
+\begin{DoxyCompactList}\small\item\em makes the isohypses from the D\+E\+M \end{DoxyCompactList}\item 
+int \hyperlink{classmnt_a457e6b3e00419a77bcd35af4814db2a3}{hunt\+Isohypse} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$isohypse, const double z, bool $\ast$$\ast$list\+Of\+Bool, const int index\+Of\+Triangle, const int new\+Size\+X, const int triangles\+Size, int number\+Of\+Separators, int depth)
+\begin{DoxyCompactList}\small\item\em for a given altitude and triangle, recursively creates the longest continuous isohypse possible \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ std\+::vector$<$ double $>$ $>$ $>$ \hyperlink{classmnt_a1fb7e07db190bcb71e54bc14b8304253}{try\+To\+Stick} (std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ my\+Isohypse\+Level, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ my\+Isohypse\+\_\+tmp)
+\begin{DoxyCompactList}\small\item\em tries to stick the isohypse to one of the other isohypses already computed, if their extremities are close enough. Otherwise, just add it at the end of the list of isohypses. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ std\+::vector$<$ std\+::vector\\*
+$<$ double $>$ $>$ $>$ $>$ \hyperlink{classmnt_a0e9c70333e3c31b63302ecf3f728d841}{try\+To\+Close} (std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ $>$ all\+The\+Isohypses)
+\begin{DoxyCompactList}\small\item\em tries to join the first and last point of isohypses, if their extremities are close enough \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classmnt_a8a8f2b44f86b8aa1e015a4561c45b2f5}{taille\+X} (double $\ast$$\ast$mnt1)
+\begin{DoxyCompactList}\small\item\em computes the width of the D\+E\+M \end{DoxyCompactList}\item 
+static int \hyperlink{classmnt_a0c36bebbff1e1e169c3c1f076d3d3fe3}{taille\+Y} (double $\ast$$\ast$mnt1, double x)
+\begin{DoxyCompactList}\small\item\em computes the length of the D\+E\+M \end{DoxyCompactList}\item 
+static double \hyperlink{classmnt_a835c343bc40750a430670e4f8a4e9f28}{taille\+Cellule} (double $\ast$$\ast$mnt1)
+\begin{DoxyCompactList}\small\item\em computes the distance between two consecutive summits of the D\+E\+M grid, ie the size of a cell \end{DoxyCompactList}\item 
+static double $\ast$$\ast$ \hyperlink{classmnt_a84cca90b4de0a485d27940cb6bc96b41}{reverse\+Y} (double $\ast$$\ast$mnt1, int size\+X, int size\+Y)
+\begin{DoxyCompactList}\small\item\em reverses the order of the stored D\+E\+M points along the y axis\+: does not change the D\+E\+M but only the order of storage of points \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Deals with the D\+E\+M \& the isohypses. 
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clement.drouadaine@ensg.eu}{\tt clement.\+drouadaine@ensg.\+eu}, \href{mailto:marie.aladenise@ensg.eu}{\tt marie.\+aladenise@ensg.\+eu}, \href{mailto:philemon.renaud@ensg.eu}{\tt philemon.\+renaud@ensg.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+autumn 2014 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmnt_a6364f0c2b3c9e22892412d801c190a3b}{\index{mnt@{mnt}!mnt@{mnt}}
+\index{mnt@{mnt}!mnt@{mnt}}
+\subsubsection[{mnt}]{\setlength{\rightskip}{0pt plus 5cm}mnt\+::mnt (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path, }
+\item[{bool}]{compute\+Isohypses = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a6364f0c2b3c9e22892412d801c190a3b}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & path\+: the path to the file to read, which must be either a .asc or a .xyz format. Will also check for .xml with the same name in the folder, and will try to read it as the isolines file if it exists. If it does not exist, it will be written with the same name on the same folder. \\
+\hline
+{\em bool} & compute\+Isohypses\+: set to true by default. If false, will deal with the isohypses \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmnt_a8c529a4579c4acfbd7a0a39209b50351}{\index{mnt@{mnt}!mnt@{mnt}}
+\index{mnt@{mnt}!mnt@{mnt}}
+\subsubsection[{mnt}]{\setlength{\rightskip}{0pt plus 5cm}mnt\+::mnt (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{mnt\+Mnt, }
+\item[{int}]{size\+X, }
+\item[{int}]{size\+Y, }
+\item[{double}]{nodata\+Value, }
+\item[{double}]{cell\+Size, }
+\item[{int}]{number\+Of\+Isohypses, }
+\item[{double $\ast$}]{altitude\+Of\+Isohypses}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a8c529a4579c4acfbd7a0a39209b50351}
+\hypertarget{classmnt_a14e56996e6241d28e7aaad061496e8fe}{\index{mnt@{mnt}!````~mnt@{$\sim$mnt}}
+\index{````~mnt@{$\sim$mnt}!mnt@{mnt}}
+\subsubsection[{$\sim$mnt}]{\setlength{\rightskip}{0pt plus 5cm}mnt\+::$\sim$mnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a14e56996e6241d28e7aaad061496e8fe}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmnt_af991e721614ad91a1996503dee8206c3}{\index{mnt@{mnt}!ajout\+Point\+Z@{ajout\+Point\+Z}}
+\index{ajout\+Point\+Z@{ajout\+Point\+Z}!mnt@{mnt}}
+\subsubsection[{ajout\+Point\+Z}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::ajout\+Point\+Z (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{vect, }
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)}}\label{classmnt_af991e721614ad91a1996503dee8206c3}
+
+
+adds a point of coordinates x, y, z, to the vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector} & $<$std\+::vector$<$double$>$ $>$ \&vect\+: the vector to add the point to \\
+\hline
+{\em double} & x\+: the x coordinate of the point to add \\
+\hline
+{\em double} & y\+: the y coordinate of the point to add \\
+\hline
+{\em double} & z\+: the z coordinate of the point to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmnt_a6e7ba851b2e61445405e157873a86e7c}{\index{mnt@{mnt}!from\+File@{from\+File}}
+\index{from\+File@{from\+File}!mnt@{mnt}}
+\subsubsection[{from\+File}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$$\ast$ mnt\+::from\+File (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a6e7ba851b2e61445405e157873a86e7c}
+
+
+the main subroutine of the constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & path\+: the path to the file to read, which must be either a .asc or a .xyz format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the mnt grid corresponding to the file read, as a double$\ast$$\ast$; also sets the private attributes 
+\end{DoxyReturn}
+\hypertarget{classmnt_aeb54a14efadb46ddcb27229fc328ac74}{\index{mnt@{mnt}!get\+Altitudes\+Of\+Isohypses@{get\+Altitudes\+Of\+Isohypses}}
+\index{get\+Altitudes\+Of\+Isohypses@{get\+Altitudes\+Of\+Isohypses}!mnt@{mnt}}
+\subsubsection[{get\+Altitudes\+Of\+Isohypses}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ mnt\+::get\+Altitudes\+Of\+Isohypses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_aeb54a14efadb46ddcb27229fc328ac74}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+altitudes\+Of\+Isohypses, an array containing the different altitudes at which the isolines will be computed 
+\end{DoxyReturn}
+\hypertarget{classmnt_a5389db8a71d75879b01aa76fac9a71eb}{\index{mnt@{mnt}!get\+Cell\+Size@{get\+Cell\+Size}}
+\index{get\+Cell\+Size@{get\+Cell\+Size}!mnt@{mnt}}
+\subsubsection[{get\+Cell\+Size}]{\setlength{\rightskip}{0pt plus 5cm}double mnt\+::get\+Cell\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a5389db8a71d75879b01aa76fac9a71eb}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+cell\+Size, the distance between two consecutive summits 
+\end{DoxyReturn}
+\hypertarget{classmnt_a872d1370959a937b22f9a09cc2dd1a2e}{\index{mnt@{mnt}!get\+Isohypses@{get\+Isohypses}}
+\index{get\+Isohypses@{get\+Isohypses}!mnt@{mnt}}
+\subsubsection[{get\+Isohypses}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ $>$ mnt\+::get\+Isohypses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a872d1370959a937b22f9a09cc2dd1a2e}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+isohypses, the isolines to be drawn 
+\end{DoxyReturn}
+\hypertarget{classmnt_ac239b545c24f5534a6c4a008e1eb4138}{\index{mnt@{mnt}!get\+Min\+Max\+Z@{get\+Min\+Max\+Z}}
+\index{get\+Min\+Max\+Z@{get\+Min\+Max\+Z}!mnt@{mnt}}
+\subsubsection[{get\+Min\+Max\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ mnt\+::get\+Min\+Max\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_ac239b545c24f5534a6c4a008e1eb4138}
+
+
+gets the min an max value of z in the D\+E\+M 
+
+\begin{DoxyReturn}{Returns}
+a pointer to an array consisting of \{min\+Z, max\+Z\} 
+\end{DoxyReturn}
+\hypertarget{classmnt_abbbd15d59bca64abc7a374b97717a317}{\index{mnt@{mnt}!get\+Mnt@{get\+Mnt}}
+\index{get\+Mnt@{get\+Mnt}!mnt@{mnt}}
+\subsubsection[{get\+Mnt}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$$\ast$ mnt\+::get\+Mnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_abbbd15d59bca64abc7a374b97717a317}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+mnt, a double$\ast$$\ast$ pointer to the D\+E\+M grid 
+\end{DoxyReturn}
+\hypertarget{classmnt_a4316ef2f545152a990af37b1d0baf342}{\index{mnt@{mnt}!get\+Nodata\+Value@{get\+Nodata\+Value}}
+\index{get\+Nodata\+Value@{get\+Nodata\+Value}!mnt@{mnt}}
+\subsubsection[{get\+Nodata\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int mnt\+::get\+Nodata\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a4316ef2f545152a990af37b1d0baf342}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+nodata\+Value, the value taken by missing data 
+\end{DoxyReturn}
+\hypertarget{classmnt_a141910258ecc57ecf8ac4efc9ce4e652}{\index{mnt@{mnt}!get\+Number\+Of\+Isohypses@{get\+Number\+Of\+Isohypses}}
+\index{get\+Number\+Of\+Isohypses@{get\+Number\+Of\+Isohypses}!mnt@{mnt}}
+\subsubsection[{get\+Number\+Of\+Isohypses}]{\setlength{\rightskip}{0pt plus 5cm}int mnt\+::get\+Number\+Of\+Isohypses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a141910258ecc57ecf8ac4efc9ce4e652}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+number\+Of\+Isohypses, the number of different altitudes at which the isolines will be computed 
+\end{DoxyReturn}
+\hypertarget{classmnt_a13e8f8a15dabb1325fd82329af205b55}{\index{mnt@{mnt}!get\+Size\+X@{get\+Size\+X}}
+\index{get\+Size\+X@{get\+Size\+X}!mnt@{mnt}}
+\subsubsection[{get\+Size\+X}]{\setlength{\rightskip}{0pt plus 5cm}int mnt\+::get\+Size\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a13e8f8a15dabb1325fd82329af205b55}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+size\+X, the size of the D\+E\+M grid on the x axis 
+\end{DoxyReturn}
+\hypertarget{classmnt_a3c02bb363dc1f50d10c25d1a16c381bb}{\index{mnt@{mnt}!get\+Size\+Y@{get\+Size\+Y}}
+\index{get\+Size\+Y@{get\+Size\+Y}!mnt@{mnt}}
+\subsubsection[{get\+Size\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int mnt\+::get\+Size\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a3c02bb363dc1f50d10c25d1a16c381bb}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+size\+Y, the size of the D\+E\+M grid on the y axis 
+\end{DoxyReturn}
+\hypertarget{classmnt_a457e6b3e00419a77bcd35af4814db2a3}{\index{mnt@{mnt}!hunt\+Isohypse@{hunt\+Isohypse}}
+\index{hunt\+Isohypse@{hunt\+Isohypse}!mnt@{mnt}}
+\subsubsection[{hunt\+Isohypse}]{\setlength{\rightskip}{0pt plus 5cm}int mnt\+::hunt\+Isohypse (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $\ast$}]{isohypse, }
+\item[{const double}]{z, }
+\item[{bool $\ast$$\ast$}]{list\+Of\+Bool, }
+\item[{const int}]{index\+Of\+Triangle, }
+\item[{const int}]{new\+Size\+X, }
+\item[{const int}]{triangles\+Size, }
+\item[{int}]{number\+Of\+Separators, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a457e6b3e00419a77bcd35af4814db2a3}
+
+
+for a given altitude and triangle, recursively creates the longest continuous isohypse possible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$$\ast$ isohypse, a pointer to the vector we are adding the points to \\
+\hline
+{\em const} & double z, the altitude at which we want to compute the isohypse \\
+\hline
+{\em bool$\ast$$\ast$} & list\+Of\+Bool, a pointer to an array of booleans marking if a triangle has been (partially) computed or not. The line i corresponds to the triangle i, and consists of 4 booleans\+: one per side of the triangle, and one for the whole thing. \\
+\hline
+{\em const} & int index\+Of\+Triangle, the index of the triangle we will be starting with \\
+\hline
+{\em const} & int new\+Size\+X, the number of triangles per line of the D\+E\+M \\
+\hline
+{\em const} & int triangles\+Size, the total number of triangles of the D\+E\+M \\
+\hline
+{\em int} & number\+Of\+Separators, the current number of separators contained within the isohypse \\
+\hline
+{\em int} & depth, the current depth of the recursions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int containing the number of separators within the isohypse, or -\/1 if recursion has been too deep 
+\end{DoxyReturn}
+\hypertarget{classmnt_a0837eecf07eee5211b07ac751f426403}{\index{mnt@{mnt}!intersection\+Points\+Z@{intersection\+Points\+Z}}
+\index{intersection\+Points\+Z@{intersection\+Points\+Z}!mnt@{mnt}}
+\subsubsection[{intersection\+Points\+Z}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ double $>$ $>$ mnt\+::intersection\+Points\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a0837eecf07eee5211b07ac751f426403}
+
+
+computes all the points of all the isohypses, in random order 
+
+\begin{DoxyReturn}{Returns}
+a vector of points 
+\end{DoxyReturn}
+\hypertarget{classmnt_a9ec26153c6945ea6fabcb5533cd9db7d}{\index{mnt@{mnt}!isohypses\+From\+Points@{isohypses\+From\+Points}}
+\index{isohypses\+From\+Points@{isohypses\+From\+Points}!mnt@{mnt}}
+\subsubsection[{isohypses\+From\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::isohypses\+From\+Points (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{vector\+Of\+Points}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a9ec26153c6945ea6fabcb5533cd9db7d}
+
+
+D\+E\+P\+R\+E\+C\+A\+T\+E\+D. Makes isohypses from a list of unordered points, and stores it in the \+\_\+isohypses attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ vector\+Of\+Points\+: a vector containing xyz points (ie a vector of vectors of doubles) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmnt_a8158d8a011f9804c392165fa7a5457ca}{\index{mnt@{mnt}!make\+Isohypses@{make\+Isohypses}}
+\index{make\+Isohypses@{make\+Isohypses}!mnt@{mnt}}
+\subsubsection[{make\+Isohypses}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::make\+Isohypses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a8158d8a011f9804c392165fa7a5457ca}
+
+
+makes the isohypses from the D\+E\+M 
+
+\hypertarget{classmnt_a479074a193ec1c5d669984035da98e83}{\index{mnt@{mnt}!print@{print}}
+\index{print@{print}!mnt@{mnt}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a479074a193ec1c5d669984035da98e83}
+
+
+prints a D\+E\+M 
+
+\hypertarget{classmnt_a7b634e9fc6e3f2ac5fc197ec9768aa7d}{\index{mnt@{mnt}!read\+Isohypses\+From\+File@{read\+Isohypses\+From\+File}}
+\index{read\+Isohypses\+From\+File@{read\+Isohypses\+From\+File}!mnt@{mnt}}
+\subsubsection[{read\+Isohypses\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::read\+Isohypses\+From\+File (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a7b634e9fc6e3f2ac5fc197ec9768aa7d}
+
+
+reads isohypses from an xml file, and manages the attributes \+\_\+altitudes\+Of\+Isohypses, \+\_\+number\+Of\+Isohypses and \+\_\+isohypses accordingly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & path\+: the path to the file to read \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmnt_acde47c4abd14447b8e70f5d03702294b}{\index{mnt@{mnt}!resize\+Mnt@{resize\+Mnt}}
+\index{resize\+Mnt@{resize\+Mnt}!mnt@{mnt}}
+\subsubsection[{resize\+Mnt}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::resize\+Mnt (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Size}
+\end{DoxyParamCaption}
+)}}\label{classmnt_acde47c4abd14447b8e70f5d03702294b}
+
+
+cuts the D\+E\+M to make a square of the specified size, starting with the top left corner. Stores result in \+\_\+mnt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & new\+Size\+: the size for the new D\+E\+M \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmnt_a84cca90b4de0a485d27940cb6bc96b41}{\index{mnt@{mnt}!reverse\+Y@{reverse\+Y}}
+\index{reverse\+Y@{reverse\+Y}!mnt@{mnt}}
+\subsubsection[{reverse\+Y}]{\setlength{\rightskip}{0pt plus 5cm}static double $\ast$$\ast$ mnt\+::reverse\+Y (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{mnt1, }
+\item[{int}]{size\+X, }
+\item[{int}]{size\+Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmnt_a84cca90b4de0a485d27940cb6bc96b41}
+
+
+reverses the order of the stored D\+E\+M points along the y axis\+: does not change the D\+E\+M but only the order of storage of points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double$\ast$$\ast$} & mnt1\+: a pointer to the D\+E\+M grid \\
+\hline
+{\em int} & size\+X\+: the size of the D\+E\+M grid along the first axis \\
+\hline
+{\em int} & size\+Y\+: the size of the D\+E\+M gris along the other axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double$\ast$$\ast$ pointer to the reversed grid 
+\end{DoxyReturn}
+\hypertarget{classmnt_aedbc5d1b46cfa97f366d9554fd0737ef}{\index{mnt@{mnt}!set\+Altitudes\+Of\+Isohypses@{set\+Altitudes\+Of\+Isohypses}}
+\index{set\+Altitudes\+Of\+Isohypses@{set\+Altitudes\+Of\+Isohypses}!mnt@{mnt}}
+\subsubsection[{set\+Altitudes\+Of\+Isohypses}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::set\+Altitudes\+Of\+Isohypses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_aedbc5d1b46cfa97f366d9554fd0737ef}
+
+
+computes the optimal altitudes for the isolines to be computed, and stores it into \+\_\+altitudes\+Of\+Isohypses 
+
+\hypertarget{classmnt_a835c343bc40750a430670e4f8a4e9f28}{\index{mnt@{mnt}!taille\+Cellule@{taille\+Cellule}}
+\index{taille\+Cellule@{taille\+Cellule}!mnt@{mnt}}
+\subsubsection[{taille\+Cellule}]{\setlength{\rightskip}{0pt plus 5cm}static double mnt\+::taille\+Cellule (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{mnt1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmnt_a835c343bc40750a430670e4f8a4e9f28}
+
+
+computes the distance between two consecutive summits of the D\+E\+M grid, ie the size of a cell 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double$\ast$$\ast$} & mnt1\+: a pointer to the D\+E\+M grid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance between two consecutive summits 
+\end{DoxyReturn}
+\hypertarget{classmnt_a8a8f2b44f86b8aa1e015a4561c45b2f5}{\index{mnt@{mnt}!taille\+X@{taille\+X}}
+\index{taille\+X@{taille\+X}!mnt@{mnt}}
+\subsubsection[{taille\+X}]{\setlength{\rightskip}{0pt plus 5cm}static int mnt\+::taille\+X (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{mnt1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmnt_a8a8f2b44f86b8aa1e015a4561c45b2f5}
+
+
+computes the width of the D\+E\+M 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double$\ast$$\ast$} & mnt1\+: a pointer to the D\+E\+M grid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the D\+E\+M grid on the x axis 
+\end{DoxyReturn}
+\hypertarget{classmnt_a0c36bebbff1e1e169c3c1f076d3d3fe3}{\index{mnt@{mnt}!taille\+Y@{taille\+Y}}
+\index{taille\+Y@{taille\+Y}!mnt@{mnt}}
+\subsubsection[{taille\+Y}]{\setlength{\rightskip}{0pt plus 5cm}static int mnt\+::taille\+Y (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{mnt1, }
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmnt_a0c36bebbff1e1e169c3c1f076d3d3fe3}
+
+
+computes the length of the D\+E\+M 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double$\ast$$\ast$} & mnt1\+: a pointer to the D\+E\+M grid \\
+\hline
+{\em double} & x\+: the size along the other axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the D\+E\+M grid along the y axis 
+\end{DoxyReturn}
+\hypertarget{classmnt_a2cae85690dd0565926b808ef0aa74323}{\index{mnt@{mnt}!triangles@{triangles}}
+\index{triangles@{triangles}!mnt@{mnt}}
+\subsubsection[{triangles}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a2cae85690dd0565926b808ef0aa74323}
+
+
+creates the list of triangles (ie a vector containing vectors of three points) from the D\+E\+M, and stores it into \+\_\+triangles 
+
+\hypertarget{classmnt_a0e9c70333e3c31b63302ecf3f728d841}{\index{mnt@{mnt}!try\+To\+Close@{try\+To\+Close}}
+\index{try\+To\+Close@{try\+To\+Close}!mnt@{mnt}}
+\subsubsection[{try\+To\+Close}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ mnt\+::try\+To\+Close (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ $>$}]{all\+The\+Isohypses}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a0e9c70333e3c31b63302ecf3f728d841}
+
+
+tries to join the first and last point of isohypses, if their extremities are close enough 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$std\+::vector$<$std\+::vector$<$double$>$} & $>$ $>$ $>$ all\+The\+Isohypses\+: a vector containing vectors of isohypses \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an upgraded vector, with closable isohypses now closed 
+\end{DoxyReturn}
+\hypertarget{classmnt_a1fb7e07db190bcb71e54bc14b8304253}{\index{mnt@{mnt}!try\+To\+Stick@{try\+To\+Stick}}
+\index{try\+To\+Stick@{try\+To\+Stick}!mnt@{mnt}}
+\subsubsection[{try\+To\+Stick}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ mnt\+::try\+To\+Stick (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$}]{my\+Isohypse\+Level, }
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{my\+Isohypse\+\_\+tmp}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a1fb7e07db190bcb71e54bc14b8304253}
+
+
+tries to stick the isohypse to one of the other isohypses already computed, if their extremities are close enough. Otherwise, just add it at the end of the list of isohypses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$std\+::vector$<$double$>$} & $>$ $>$ my\+Isohypse\+Level, a vector containing the isohypses already computed \\
+\hline
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ my\+Isohypse\+\_\+tmp, the isohypse we are trying to stick \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an upgraded my\+Isohypse\+Level, now containing my\+Isohypse\+\_\+tmp 
+\end{DoxyReturn}
+\hypertarget{classmnt_a88c85808c2daf769f831ccdd44686fa3}{\index{mnt@{mnt}!write\+Isohypses\+To\+File@{write\+Isohypses\+To\+File}}
+\index{write\+Isohypses\+To\+File@{write\+Isohypses\+To\+File}!mnt@{mnt}}
+\subsubsection[{write\+Isohypses\+To\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mnt\+::write\+Isohypses\+To\+File (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)}}\label{classmnt_a88c85808c2daf769f831ccdd44686fa3}
+
+
+saves the isohypses in an xml file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & path\+: the path to the file to write \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{mnt_8h}{mnt.\+h}\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{mnt_8cpp}{mnt.\+cpp}\end{DoxyCompactItemize}

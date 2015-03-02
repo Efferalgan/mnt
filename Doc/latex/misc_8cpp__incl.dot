@@ -1,0 +1,26 @@
+digraph "/home/gtsi/ProjetGPX/last_version/misc.cpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/gtsi/ProjetGPX\l/last_version/misc.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="misc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$misc_8h.html"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="QFile",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="QTextStream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="QXmlStreamReader",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="QString",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="QDateTime",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="math.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="proj_api.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

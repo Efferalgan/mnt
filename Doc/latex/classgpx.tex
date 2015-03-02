@@ -1,0 +1,169 @@
+\hypertarget{classgpx}{\section{gpx Class Reference}
+\label{classgpx}\index{gpx@{gpx}}
+}
+
+
+Deals with the gpx, its creation, and its import/export as a text file.  
+
+
+
+
+{\ttfamily \#include $<$gpx.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgpx_a8e6c8f47d83e265dd23d8b79ae373f30}{gpx} (Q\+String gpx\+Path)
+\begin{DoxyCompactList}\small\item\em constructor. Basically, just calls the from\+File function \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ double $>$ $>$ \hyperlink{classgpx_a1f722deb5ee36698ecfb6a2a7dcb2487}{from\+File} (Q\+String gpx\+Path)
+\begin{DoxyCompactList}\small\item\em reads a .gpx file to construct a gpx \end{DoxyCompactList}\item 
+bool \hyperlink{classgpx_af71bec87483477205eed93aecacf96f1}{in\+Mnt} (\hyperlink{classmnt}{mnt} my\+M\+N\+T)
+\begin{DoxyCompactList}\small\item\em checks if at least 70\% of the gpx in contained within the D\+E\+M, and truncates the out-\/of-\/bounds parts \end{DoxyCompactList}\item 
+void \hyperlink{classgpx_a46cdaa73091e89f5974f83131202a76a}{remove\+Points} (\hyperlink{classmnt}{mnt} my\+Mnt, std\+::vector$<$ double $>$ indices\+Of\+Points\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em deletes the gpx points whose indices are given, and stops the gpx at the border of the D\+E\+M \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classgpx_a7c6a537bfa38ebc1ac5f5c3ddedbcefa}{get\+Title} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ double $>$ $>$ \hyperlink{classgpx_afe00c09e39c00a8318bc4b343a5c1b4e}{get\+Gpx} ()
+\begin{DoxyCompactList}\small\item\em getter \end{DoxyCompactList}\item 
+bool \hyperlink{classgpx_a703efa5de7d507a0c496440a0498e08a}{does\+Time\+Exist} ()
+\begin{DoxyCompactList}\small\item\em checks if a time had been defined in the gpx \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Deals with the gpx, its creation, and its import/export as a text file. 
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:clement.drouadaine@ensg.eu}{\tt clement.\+drouadaine@ensg.\+eu}, \href{mailto:marie.aladenise@ensg.eu}{\tt marie.\+aladenise@ensg.\+eu}, \href{mailto:philemon.renaud@ensg.eu}{\tt philemon.\+renaud@ensg.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+autumn 2014 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgpx_a8e6c8f47d83e265dd23d8b79ae373f30}{\index{gpx@{gpx}!gpx@{gpx}}
+\index{gpx@{gpx}!gpx@{gpx}}
+\subsubsection[{gpx}]{\setlength{\rightskip}{0pt plus 5cm}gpx\+::gpx (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{gpx\+Path}
+\end{DoxyParamCaption}
+)}}\label{classgpx_a8e6c8f47d83e265dd23d8b79ae373f30}
+
+
+constructor. Basically, just calls the from\+File function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & gpx\+Path\+: the path to the file to read. Must be a .gpx \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgpx_a703efa5de7d507a0c496440a0498e08a}{\index{gpx@{gpx}!does\+Time\+Exist@{does\+Time\+Exist}}
+\index{does\+Time\+Exist@{does\+Time\+Exist}!gpx@{gpx}}
+\subsubsection[{does\+Time\+Exist}]{\setlength{\rightskip}{0pt plus 5cm}bool gpx\+::does\+Time\+Exist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgpx_a703efa5de7d507a0c496440a0498e08a}
+
+
+checks if a time had been defined in the gpx 
+
+\begin{DoxyReturn}{Returns}
+true if a time was provided, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgpx_a1f722deb5ee36698ecfb6a2a7dcb2487}{\index{gpx@{gpx}!from\+File@{from\+File}}
+\index{from\+File@{from\+File}!gpx@{gpx}}
+\subsubsection[{from\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ double $>$ $>$ gpx\+::from\+File (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{gpx\+Path}
+\end{DoxyParamCaption}
+)}}\label{classgpx_a1f722deb5ee36698ecfb6a2a7dcb2487}
+
+
+reads a .gpx file to construct a gpx 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & gpx\+Path\+: the path to the file to read. Must be a .gpx \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::vector$<$double$>$ $>$ containing the ordered points of the gpx 
+\end{DoxyReturn}
+\hypertarget{classgpx_afe00c09e39c00a8318bc4b343a5c1b4e}{\index{gpx@{gpx}!get\+Gpx@{get\+Gpx}}
+\index{get\+Gpx@{get\+Gpx}!gpx@{gpx}}
+\subsubsection[{get\+Gpx}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ double $>$ $>$ gpx\+::get\+Gpx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgpx_afe00c09e39c00a8318bc4b343a5c1b4e}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+the gpx vector 
+\end{DoxyReturn}
+\hypertarget{classgpx_a7c6a537bfa38ebc1ac5f5c3ddedbcefa}{\index{gpx@{gpx}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!gpx@{gpx}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string gpx\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgpx_a7c6a537bfa38ebc1ac5f5c3ddedbcefa}
+
+
+getter 
+
+\begin{DoxyReturn}{Returns}
+the title of the gpx 
+\end{DoxyReturn}
+\hypertarget{classgpx_af71bec87483477205eed93aecacf96f1}{\index{gpx@{gpx}!in\+Mnt@{in\+Mnt}}
+\index{in\+Mnt@{in\+Mnt}!gpx@{gpx}}
+\subsubsection[{in\+Mnt}]{\setlength{\rightskip}{0pt plus 5cm}bool gpx\+::in\+Mnt (
+\begin{DoxyParamCaption}
+\item[{{\bf mnt}}]{my\+M\+N\+T}
+\end{DoxyParamCaption}
+)}}\label{classgpx_af71bec87483477205eed93aecacf96f1}
+
+
+checks if at least 70\% of the gpx in contained within the D\+E\+M, and truncates the out-\/of-\/bounds parts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mnt} & my\+M\+N\+T\+: the D\+E\+M that will be used for the check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least 70\% of the gpx is in the D\+E\+M, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgpx_a46cdaa73091e89f5974f83131202a76a}{\index{gpx@{gpx}!remove\+Points@{remove\+Points}}
+\index{remove\+Points@{remove\+Points}!gpx@{gpx}}
+\subsubsection[{remove\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void gpx\+::remove\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf mnt}}]{my\+Mnt, }
+\item[{std\+::vector$<$ double $>$}]{indices\+Of\+Points\+To\+Remove}
+\end{DoxyParamCaption}
+)}}\label{classgpx_a46cdaa73091e89f5974f83131202a76a}
+
+
+deletes the gpx points whose indices are given, and stops the gpx at the border of the D\+E\+M 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mnt} & my\+Mnt\+: the D\+E\+M to check the border against \\
+\hline
+{\em std\+::vector$<$double$>$} & indices\+Of\+Points\+To\+Remove\+: a vector containing the indices of the gpx points to remove \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{gpx_8h}{gpx.\+h}\item 
+/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/\hyperlink{gpx_8cpp}{gpx.\+cpp}\end{DoxyCompactItemize}

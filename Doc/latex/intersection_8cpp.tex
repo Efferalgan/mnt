@@ -1,0 +1,102 @@
+\hypertarget{intersection_8cpp}{\section{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/intersection.cpp File Reference}
+\label{intersection_8cpp}\index{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/intersection.\+cpp@{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/intersection.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}intersection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mnt.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for intersection.\+cpp\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{intersection_8cpp_a62e00fed1d886322b6b6974feb5d8766}{altitude\+Point\+Gpx} (double x, double y, int taillex, int tailley, double $\ast$$\ast$mnt\+Mnt)
+\begin{DoxyCompactList}\small\item\em altitude\+Point\+Gpx\+: function to calculate the altitude of a point located on the mnt \end{DoxyCompactList}\item 
+double \hyperlink{intersection_8cpp_a02b6032512d83b103826b3a4fc2ef423}{altitude\+Point\+Intersection} (double x, double y, double x1, double y1, double z1, double x2, double y2, double z2)
+\begin{DoxyCompactList}\small\item\em altitude\+Point\+Intersection\+: function to calculate the altitude of a point located between two points (x1,y1,z1) and (x2,y2,z2) \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{intersection_8cpp_a6b4fae6a4db583936519a61472851741}{ajout\+Point} (vector$<$ vector$<$ double $>$ $>$ \&\hyperlink{main__opengl_8cpp_ad0d38886963f535e6f051ac2c2ff16d5}{vect}, double x, double y, double z, double \hyperlink{main__opengl_8cpp_afea36502e9d227ff62c5fb2719a246f2}{t})
+\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{intersection_8cpp_a1f378976a88390bea4d7ea6c10f7a4e9}{intersection\+Points} (const vector$<$ vector$<$ double $>$ $>$ \&\hyperlink{classgpx}{gpx}, int taillex, int tailley, double cell\+Size, double $\ast$$\ast$mnt\+Mnt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{intersection_8cpp_a6b4fae6a4db583936519a61472851741}{\index{intersection.\+cpp@{intersection.\+cpp}!ajout\+Point@{ajout\+Point}}
+\index{ajout\+Point@{ajout\+Point}!intersection.\+cpp@{intersection.\+cpp}}
+\subsubsection[{ajout\+Point}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ ajout\+Point (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ double $>$ $>$ \&}]{vect, }
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z, }
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)}}\label{intersection_8cpp_a6b4fae6a4db583936519a61472851741}
+\hypertarget{intersection_8cpp_a62e00fed1d886322b6b6974feb5d8766}{\index{intersection.\+cpp@{intersection.\+cpp}!altitude\+Point\+Gpx@{altitude\+Point\+Gpx}}
+\index{altitude\+Point\+Gpx@{altitude\+Point\+Gpx}!intersection.\+cpp@{intersection.\+cpp}}
+\subsubsection[{altitude\+Point\+Gpx}]{\setlength{\rightskip}{0pt plus 5cm}double altitude\+Point\+Gpx (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{int}]{taillex, }
+\item[{int}]{tailley, }
+\item[{double $\ast$$\ast$}]{mnt\+Mnt}
+\end{DoxyParamCaption}
+)}}\label{intersection_8cpp_a62e00fed1d886322b6b6974feb5d8766}
+
+
+altitude\+Point\+Gpx\+: function to calculate the altitude of a point located on the mnt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x, y \+: coordinates x, y of the point \\
+\hline
+{\em mnt} & my\+Mnt\+: mnt \\
+\hline
+{\em int} & taillex, tailley\+: sizes of the mnt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+altitude z of the point (x,y) 
+\end{DoxyReturn}
+\hypertarget{intersection_8cpp_a02b6032512d83b103826b3a4fc2ef423}{\index{intersection.\+cpp@{intersection.\+cpp}!altitude\+Point\+Intersection@{altitude\+Point\+Intersection}}
+\index{altitude\+Point\+Intersection@{altitude\+Point\+Intersection}!intersection.\+cpp@{intersection.\+cpp}}
+\subsubsection[{altitude\+Point\+Intersection}]{\setlength{\rightskip}{0pt plus 5cm}double altitude\+Point\+Intersection (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{x1, }
+\item[{double}]{y1, }
+\item[{double}]{z1, }
+\item[{double}]{x2, }
+\item[{double}]{y2, }
+\item[{double}]{z2}
+\end{DoxyParamCaption}
+)}}\label{intersection_8cpp_a02b6032512d83b103826b3a4fc2ef423}
+
+
+altitude\+Point\+Intersection\+: function to calculate the altitude of a point located between two points (x1,y1,z1) and (x2,y2,z2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x,y\+: coordinates x,y of the point for which we look for the altitude \\
+\hline
+{\em double} & x1, y1, z1\+: coordinates x,y,z \\
+\hline
+{\em double} & x2,y2,z2\+: coordinates x,y,z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+altitude z of the point (x,y) 
+\end{DoxyReturn}
+\hypertarget{intersection_8cpp_a1f378976a88390bea4d7ea6c10f7a4e9}{\index{intersection.\+cpp@{intersection.\+cpp}!intersection\+Points@{intersection\+Points}}
+\index{intersection\+Points@{intersection\+Points}!intersection.\+cpp@{intersection.\+cpp}}
+\subsubsection[{intersection\+Points}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ intersection\+Points (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ vector$<$ double $>$ $>$ \&}]{gpx, }
+\item[{int}]{taillex, }
+\item[{int}]{tailley, }
+\item[{double}]{cell\+Size, }
+\item[{double $\ast$$\ast$}]{mnt\+Mnt}
+\end{DoxyParamCaption}
+)}}\label{intersection_8cpp_a1f378976a88390bea4d7ea6c10f7a4e9}

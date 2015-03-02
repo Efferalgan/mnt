@@ -1,0 +1,53 @@
+\hypertarget{mnt_8h}{\section{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/mnt.h File Reference}
+\label{mnt_8h}\index{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/mnt.\+h@{/home/gtsi/\+Projet\+G\+P\+X/last\+\_\+version/mnt.\+h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$Q\+String$>$}\\*
+{\ttfamily \#include $<$Q\+File$>$}\\*
+{\ttfamily \#include $<$Q\+Text\+Stream$>$}\\*
+{\ttfamily \#include $<$misc.\+h$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+Include dependency graph for mnt.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmnt}{mnt}
+\begin{DoxyCompactList}\small\item\em Deals with the D\+E\+M \& the isohypses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ std\+::vector$<$ double $>$ $>$ $>$ \hyperlink{mnt_8h_a324cbea92ea904c6f00e249b6f047b26}{class\+By\+Alti} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ vector\+Of\+Points, double $\ast$array\+Of\+Alti, int array\+Size)
+\begin{DoxyCompactList}\small\item\em D\+E\+P\+R\+E\+C\+A\+T\+E\+D. Takes a vector of points, and returns a vector of vector of points, sorted by altitude. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{mnt_8h_a324cbea92ea904c6f00e249b6f047b26}{\index{mnt.\+h@{mnt.\+h}!class\+By\+Alti@{class\+By\+Alti}}
+\index{class\+By\+Alti@{class\+By\+Alti}!mnt.\+h@{mnt.\+h}}
+\subsubsection[{class\+By\+Alti}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ class\+By\+Alti (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{vector\+Of\+Points, }
+\item[{double $\ast$}]{array\+Of\+Alti, }
+\item[{int}]{array\+Size}
+\end{DoxyParamCaption}
+)}}\label{mnt_8h_a324cbea92ea904c6f00e249b6f047b26}
+
+
+D\+E\+P\+R\+E\+C\+A\+T\+E\+D. Takes a vector of points, and returns a vector of vector of points, sorted by altitude. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::vector$<$double$>$} & $>$ vector\+Of\+Points\+: a vector of unsorted points \\
+\hline
+{\em double$\ast$} & array\+Of\+Alti\+: an array containing the altitudes of the points \\
+\hline
+{\em int} & array\+Size\+: the length of this array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$std\+::vector$<$double$>$ $>$ $>$ sorted\+: a vector of vector of points, sorted by altitude 
+\end{DoxyReturn}
